@@ -7,10 +7,14 @@
  * alone. It then scrolls the bookmarks timeline and captures the GraphQL
  * responses the page itself makes, so no API keys or query IDs are needed.
  *
+ * The window is self-healing: close it by accident and it reopens within
+ * seconds, keeping whatever was already captured. Captures are saved even
+ * if the run ends early.
+ *
  * Run: npm run harvest   (from this directory; tsx, per repo convention)
  */
 import { chromium } from "patchright";
-import type { Page, Response } from "patchright";
+import type { BrowserContext, Page, Response } from "patchright";
 import * as fs from "node:fs";
 import * as path from "node:path";
 import * as os from "node:os";
@@ -37,6 +41,7 @@ interface Bookmark {
 }
 
 const seen = new Map<string, Bookmark>();
+const sleep = (ms: number) => new Promise<void>((r) => setTimeout(r, ms));
 
 function extractTweet(result: any): Bookmark | null {
   const tweet = result?.__typename === "TweetWithVisibilityResults" ? result.tweet : result;
@@ -92,47 +97,97 @@ async function onResponse(res: Response) {
   }
 }
 
-async function waitForTimeline(page: Page): Promise<void> {
-  const deadline = Date.now() + LOGIN_WAIT_MS;
-  let lastLogged = "";
-  while (Date.now() < deadline) {
-    if (seen.size > 0) return;
-    if (page.isClosed()) {
-      // Window or tab closed mid-login: reopen rather than crash.
+function save(): void {
+  fs.mkdirSync(OUT_DIR, { recursive: true });
+  fs.writeFileSync(OUT_FILE, JSON.stringify([...seen.values()], null, 2));
+  console.log(`Saved ${seen.size} bookmarks to ${OUT_FILE}`);
+}
+
+let ctx: BrowserContext | null = null;
+let page: Page | null = null;
+
+async function openBrowser(): Promise<void> {
+  ctx = await chromium.launchPersistentContext(PROFILE_DIR, {
+    channel: "chrome",
+    headless: false,
+    viewport: null,
+  });
+  ctx.on("close", () => {
+    ctx = null;
+    page = null;
+  });
+  page = ctx.pages()[0] ?? (await ctx.newPage());
+  page.on("response", onResponse);
+  await page.goto(BOOKMARKS_URL).catch(() => {});
+  console.log("Chrome window open.");
+}
+
+/** Ensure a live page exists, relaunching the browser if it was closed. */
+async function ensurePage(): Promise<Page | null> {
+  try {
+    if (!ctx) {
+      console.log("Browser was closed, reopening...");
+      await openBrowser();
+      return page;
+    }
+    if (!page || page.isClosed()) {
       const other = ctx.pages().find((p) => !p.isClosed());
-      page = other ?? (await ctx.newPage().catch(() => null))!;
-      if (!page) throw new Error("Browser closed before login completed.");
+      page = other ?? (await ctx.newPage());
       page.on("response", onResponse);
       await page.goto(BOOKMARKS_URL).catch(() => {});
     }
-    const url = page.url();
-    if (url !== lastLogged) {
-      console.log(`at ${url}`);
-      lastLogged = url;
+    return page;
+  } catch {
+    ctx = null;
+    page = null;
+    return null;
+  }
+}
+
+async function waitForTimeline(): Promise<void> {
+  const deadline = Date.now() + LOGIN_WAIT_MS;
+  let lastLogged = "";
+  let ticks = 0;
+  while (Date.now() < deadline) {
+    if (seen.size > 0) return;
+    try {
+      const p = await ensurePage();
+      if (!p) continue;
+      const url = p.url();
+      if (url !== lastLogged) {
+        console.log(`at ${url}`);
+        lastLogged = url;
+      }
+      // Never navigate while a login flow is on screen.
+      const inLogin = /login|flow|logout|signup/.test(url);
+      const onBookmarks = url.startsWith(BOOKMARKS_URL);
+      if (!inLogin && !onBookmarks) {
+        // Logged in but landed elsewhere (e.g. /home after auth): steer back.
+        await p.goto(BOOKMARKS_URL).catch(() => {});
+      } else if (onBookmarks && ++ticks % 10 === 0) {
+        // On the page but nothing captured after ~30s: the timeline request
+        // may have fired before we listened. Refresh.
+        await p.reload().catch(() => {});
+      }
+    } catch {
+      /* page died between checks; next ensurePage() recovers */
     }
-    // Never navigate while a login flow is on screen.
-    const inLogin = /login|flow|logout|signup/.test(url);
-    const onBookmarks = url.startsWith(BOOKMARKS_URL);
-    if (!inLogin && !onBookmarks) {
-      // Logged in but landed elsewhere (e.g. /home after auth): steer back.
-      await page.goto(BOOKMARKS_URL).catch(() => {});
-    } else if (onBookmarks) {
-      // On the page but nothing captured yet: nudge a refresh every ~30s in
-      // case the timeline request fired before we were listening.
-      await page.waitForTimeout(27000);
-      if (seen.size === 0) await page.reload().catch(() => {});
-    }
-    await page.waitForTimeout(3000);
+    await sleep(3000);
   }
   throw new Error("Timed out waiting for login / bookmarks timeline.");
 }
 
-async function scrollToEnd(page: Page): Promise<void> {
+async function scrollToEnd(): Promise<void> {
   let stalled = 0;
   let last = seen.size;
   while (stalled < STALL_ROUNDS) {
-    await page.mouse.wheel(0, 2400);
-    await page.waitForTimeout(1200);
+    try {
+      const p = await ensurePage();
+      await p?.mouse.wheel(0, 2400);
+    } catch {
+      /* recovered next round */
+    }
+    await sleep(1200);
     if (seen.size === last) stalled++;
     else {
       stalled = 0;
@@ -141,21 +196,16 @@ async function scrollToEnd(page: Page): Promise<void> {
   }
 }
 
-const ctx = await chromium.launchPersistentContext(PROFILE_DIR, {
-  channel: "chrome",
-  headless: false,
-  viewport: null,
-});
-const page = ctx.pages()[0] ?? (await ctx.newPage());
-page.on("response", onResponse);
-
-await page.goto(BOOKMARKS_URL).catch(() => {});
-await waitForTimeline(page);
-console.log("Timeline live, scrolling...");
-await scrollToEnd(page);
-
-fs.mkdirSync(OUT_DIR, { recursive: true });
-const all = [...seen.values()];
-fs.writeFileSync(OUT_FILE, JSON.stringify(all, null, 2));
-console.log(`Saved ${all.length} bookmarks to ${OUT_FILE}`);
-await ctx.close();
+try {
+  await openBrowser();
+  await waitForTimeline();
+  console.log("Timeline live, scrolling...");
+  await scrollToEnd();
+} finally {
+  if (seen.size > 0) save();
+  await ctx?.close().catch(() => {});
+}
+if (seen.size === 0) {
+  console.error("Nothing captured.");
+  process.exit(2);
+}
