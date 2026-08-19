@@ -28,7 +28,7 @@ Two top-level sections: **Applications** are actual things people have built and
 
 ### Creative & play
 
-Most of this section (plus pixelcat above) targets one board: the [Waveshare ESP32-S3 Touch AMOLED 1.8](https://www.waveshare.com/esp32-s3-touch-amoled-1.8.htm), a pocket-size touchscreen with IMU, speaker and battery support. One purchase runs nearly everything below.
+Most of this section (plus pixelcat above) targets one board: the [Waveshare ESP32-S3 Touch AMOLED 1.8](https://www.waveshare.com/esp32-s3-touch-amoled-1.8.htm), a pocket-size touchscreen with IMU, speaker and battery support. One purchase runs nearly everything below. Building for it yourself? Start with [the field guide](guides/waveshare-amoled-18.md) distilled from how these projects are built.
 
 - [tinydraw](https://github.com/aliceisjustplaying/tinydraw) - Finger-drawing app for ESP32-S3/RP2350 touch AMOLED handhelds, with variable-width ink, zoom, undo, and SVG/PNG export. ([demo](https://x.com/aliceisplaying/status/2087153749240217805))
 - [infinite-golf](https://github.com/MikeWilson/infinite-golf) - Procedurally generated mini-golf on an ESP32-S3 AMOLED handheld; you physically swing the device and the IMU measures the shot. ([demo](https://x.com/mk_wlsn/status/2087389762042958242))
