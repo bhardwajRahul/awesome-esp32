@@ -45,6 +45,10 @@ Most of this section (plus pixelcat above) targets one board: the [Waveshare ESP
 
 - [Meshtastic](https://github.com/meshtastic/firmware) - Off-grid, encrypted LoRa mesh messaging; the reference ESP32 radio project.
 
+### Remote access
+
+- [ESP-KVM](https://github.com/espkvm/espkvm) - IP-KVM on an ESP32-P4 and a TC358743 HDMI bridge: captures the target machine's screen, presents itself to that machine as a USB keyboard and mouse, and puts both in a browser, down to the BIOS of a box with no working OS. ([demo](https://espkvm.io/demo/))
+
 ## Tools, utilities & libraries
 
 ### Frameworks & languages
