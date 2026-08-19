@@ -20,6 +20,7 @@ Two top-level sections: **Applications** are actual things people have built and
 - [OpenEPaperLink](https://github.com/OpenEPaperLink/OpenEPaperLink) - Repurposes electronic shelf labels into a wireless e-paper display network with an ESP32 access point.
 - [HomePoint](https://github.com/sieren/HomePoint) - A small ESP32 screen for switching MQTT and HomeKit devices.
 - [esp32-lvgl-watchface](https://github.com/fbiego/esp32-lvgl-watchface) - Renders smartwatch binary watchfaces on a 240x240 LVGL screen, with a converter that turns watchface files into compilable code. ([demo](https://www.youtube.com/watch?v=lvRsTp9v6_k))
+- [InkSight](https://github.com/datascale-ai/inksight) - E-paper desk companion on an ESP32-C3: 24 display modes (weather, poetry, habit tracking), a community mode marketplace, and browser-based flashing.
 
 ### Home & ambient
 
