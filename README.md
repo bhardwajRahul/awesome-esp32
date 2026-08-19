@@ -1,0 +1,46 @@
+# awesome-esp32
+
+Hand-picked ESP32 projects worth building, copying, or just watching run. Every entry links to a working repository; demo links are kept when the demo is the point.
+
+Categories are provisional and will be reshaped as the list grows. See [CONTRIBUTING.md](CONTRIBUTING.md) to add a project.
+
+## Companions & AI devices
+
+- [chat-stick](https://github.com/steveruizok/chat-stick) - Hold-to-talk voice interface to Gemini Live on an ESP32-S3 stick, with persistent timers, server-side tools, and OTA updates.
+- [xiaozhi-esp32](https://github.com/78/xiaozhi-esp32) - MCP-based AI chatbot firmware powering a whole ecosystem of talking desk companions.
+- [willow](https://github.com/toverainc/willow) - Privacy-first, fully local voice assistant on the ESP32-S3 BOX, an open alternative to Echo and Google Home.
+- [openai-realtime-embedded-sdk](https://github.com/openai/openai-realtime-embedded-sdk) - OpenAI's official SDK for talking to the Realtime API over WebRTC from an ESP32-S3.
+
+## Displays & ambient screens
+
+- [trmnl firmware](https://github.com/usetrmnl/firmware) - Firmware behind the TRMNL e-ink dashboard, an ESP32-C3 driving a battery-friendly plugin ecosystem.
+- [awtrix3](https://github.com/Blueforcer/awtrix3) - Turns an Ulanzi pixel clock into a scriptable smart display with a large community of apps.
+- [OpenEPaperLink](https://github.com/OpenEPaperLink/OpenEPaperLink) - Repurposes electronic shelf labels into a wireless e-paper display network with an ESP32 access point.
+- [openHASP](https://github.com/HASwitchPlate/openHASP) - Custom touchscreen control panels for home automation, driven over MQTT.
+- [HomePoint](https://github.com/sieren/HomePoint) - A small ESP32 screen for switching MQTT and HomeKit devices.
+
+## Home & ambient
+
+- [ESPHome](https://github.com/esphome/esphome) - Describe a device in YAML, get firmware; the default way ESP32s enter Home Assistant.
+- [Tasmota](https://github.com/arendst/Tasmota) - Flash-and-forget firmware giving off-the-shelf smart plugs and lights local MQTT control.
+- [WLED](https://github.com/Aircoookie/WLED) - The addressable-LED firmware, with effects, segments, and an ecosystem of controllers built around it.
+
+## Audio & music
+
+- [squeezelite-esp32](https://github.com/sle118/squeezelite-esp32) - Multi-room audio player and AirPlay/Spotify/Bluetooth endpoint on a bare ESP32.
+- [esp32_basic_synth](https://github.com/marcel-licence/esp32_basic_synth) - A polyphonic MIDI synthesizer from one chip and a DAC.
+
+## Radio & mesh
+
+- [Meshtastic](https://github.com/meshtastic/firmware) - Off-grid, encrypted LoRa mesh messaging; the reference ESP32 radio project.
+
+## Tools & foundations
+
+- [ESP-IDF](https://github.com/espressif/esp-idf) - Espressif's official development framework.
+- [esp-hal](https://github.com/esp-rs/esp-hal) - Bare-metal Rust for ESP32 chips.
+- [ESP Web Tools](https://github.com/esphome/esp-web-tools) - Flash firmware from the browser over WebSerial, no toolchain installed.
+- [MicroPython](https://github.com/micropython/micropython) - Python on the chip, with first-class ESP32 support.
+
+## License
+
+[CC0 1.0](LICENSE). Descriptions belong to their projects' authors where quoted.
