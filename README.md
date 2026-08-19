@@ -51,6 +51,7 @@ Two top-level sections: **Applications** are actual things people have built and
 
 - [ESP Web Tools](https://github.com/esphome/esp-web-tools) - Flash firmware from the browser over WebSerial, no toolchain installed.
 - [openHASP](https://github.com/HASwitchPlate/openHASP) - Build custom touchscreen control panels for home automation, driven over MQTT.
+- [psiop](https://github.com/aap/psiop) - A compact software 3D rendering library for the ESP32.
 - [openai-realtime-embedded](https://github.com/openai/openai-realtime-embedded) - OpenAI's official SDK for talking to the Realtime API over WebRTC from an ESP32-S3.
 
 ## License
