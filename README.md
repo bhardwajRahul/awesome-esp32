@@ -27,6 +27,7 @@ Two top-level sections: **Applications** are actual things people have built and
 ### Creative & play
 
 - [tinydraw](https://github.com/aliceisjustplaying/tinydraw) - Finger-drawing app for ESP32-S3/RP2350 touch AMOLED handhelds, with variable-width ink, zoom, undo, and SVG/PNG export.
+- [infinite-golf](https://github.com/MikeWilson/infinite-golf) - Procedurally generated mini-golf on an ESP32-S3 AMOLED handheld; you physically swing the device and the IMU measures the shot.
 
 ### Audio & music
 
