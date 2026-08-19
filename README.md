@@ -9,23 +9,26 @@ Two top-level sections: **Applications** are actual things people have built and
 ### Companions & AI devices
 
 - [chat-stick](https://github.com/steveruizok/chat-stick) - Hold-to-talk voice interface to Gemini Live on an ESP32-S3 stick, with persistent timers, server-side tools, and OTA updates. ([demo](https://x.com/steveruizok/status/2081132808341176405))
-- [xiaozhi-esp32](https://github.com/78/xiaozhi-esp32) - MCP-based AI chatbot firmware powering a whole ecosystem of talking desk companions.
+- [xiaozhi-esp32](https://github.com/78/xiaozhi-esp32) - MCP-based AI chatbot firmware powering a whole ecosystem of talking desk companions. `ecosystem`
 - [pixelcat](https://github.com/toddsherman/pixelcat) - Tamagotchi-style pixel cat on an ESP32-S3 AMOLED handheld that learns your schedule, reacts to touch and sound, and can never irrecoverably die. ([demo](https://x.com/tdd/status/2088804262646288883))
 - [pocket-pet](https://github.com/frolic/pocket-pet) - Pocket-Pikachu-style virtual-pet watch on an ESP32-S3 AMOLED dev kit: a pixel pet roams a grass field, counts your real steps, sleeps with the screen, and levels up as you walk.
 
 ### Displays & ambient screens
 
-- [trmnl firmware](https://github.com/usetrmnl/firmware) - Firmware behind the TRMNL e-ink dashboard, an ESP32-C3 driving a battery-friendly plugin ecosystem.
-- [awtrix3](https://github.com/Blueforcer/awtrix3) - Turns an Ulanzi pixel clock into a scriptable smart display with a large community of apps.
-- [OpenEPaperLink](https://github.com/OpenEPaperLink/OpenEPaperLink) - Repurposes electronic shelf labels into a wireless e-paper display network with an ESP32 access point.
+- [awtrix3](https://github.com/Blueforcer/awtrix3) - Turns an Ulanzi pixel clock into a scriptable smart display with a large community of apps. `ecosystem`
 - [HomePoint](https://github.com/sieren/HomePoint) - A small ESP32 screen for switching MQTT and HomeKit devices.
 - [esp32-lvgl-watchface](https://github.com/fbiego/esp32-lvgl-watchface) - Renders smartwatch binary watchfaces on a 240x240 LVGL screen, with a converter that turns watchface files into compilable code. ([demo](https://www.youtube.com/watch?v=lvRsTp9v6_k))
-- [InkSight](https://github.com/datascale-ai/inksight) - E-paper desk companion on an ESP32-C3: 24 display modes (weather, poetry, habit tracking), a community mode marketplace, and browser-based flashing.
+
+### E-paper
+
+- [trmnl firmware](https://github.com/usetrmnl/firmware) - Firmware behind the TRMNL e-ink dashboard, an ESP32-C3 driving a battery-friendly plugin ecosystem. `ecosystem`
+- [OpenEPaperLink](https://github.com/OpenEPaperLink/OpenEPaperLink) - Repurposes electronic shelf labels into a wireless e-paper display network with an ESP32 access point. `ecosystem`
+- [InkSight](https://github.com/datascale-ai/inksight) - E-paper desk companion on an ESP32-C3: 24 display modes (weather, poetry, habit tracking), a community mode marketplace, and browser-based flashing. `ecosystem`
 
 ### Home & ambient
 
-- [Tasmota](https://github.com/arendst/Tasmota) - Flash-and-forget firmware giving off-the-shelf smart plugs and lights local MQTT control.
-- [WLED](https://github.com/Aircoookie/WLED) - The addressable-LED firmware, with effects, segments, and an ecosystem of controllers built around it.
+- [Tasmota](https://github.com/arendst/Tasmota) - Flash-and-forget firmware giving off-the-shelf smart plugs and lights local MQTT control. `ecosystem`
+- [WLED](https://github.com/Aircoookie/WLED) - The addressable-LED firmware, with effects, segments, and an ecosystem of controllers built around it. `ecosystem`
 
 ### Creative & play
 
@@ -44,7 +47,7 @@ Most of this section (plus pixelcat above) targets one board: the [Waveshare ESP
 
 ### Radio & mesh
 
-- [Meshtastic](https://github.com/meshtastic/firmware) - Off-grid, encrypted LoRa mesh messaging; the reference ESP32 radio project.
+- [Meshtastic](https://github.com/meshtastic/firmware) - Off-grid, encrypted LoRa mesh messaging; the reference ESP32 radio project. `ecosystem`
 
 ### Remote access
 
@@ -57,15 +60,20 @@ Most of this section (plus pixelcat above) targets one board: the [Waveshare ESP
 - [ESP-IDF](https://github.com/espressif/esp-idf) - Espressif's official development framework.
 - [esp-hal](https://github.com/esp-rs/esp-hal) - Bare-metal Rust for ESP32 chips.
 - [MicroPython](https://github.com/micropython/micropython) - Python on the chip, with first-class ESP32 support.
-- [ESPHome](https://github.com/esphome/esphome) - Describe a device in YAML, get firmware; the default way ESP32s enter Home Assistant.
+- [ESPHome](https://github.com/esphome/esphome) - Describe a device in YAML, get firmware; the default way ESP32s enter Home Assistant. `ecosystem`
 
 ### Utilities & SDKs
 
 - [ESP Web Tools](https://github.com/esphome/esp-web-tools) - Flash firmware from the browser over WebSerial, no toolchain installed.
 - [openHASP](https://github.com/HASwitchPlate/openHASP) - Build custom touchscreen control panels for home automation, driven over MQTT.
 - [psiop](https://github.com/aap/psiop) - A compact software 3D rendering library for the ESP32. ([demo](https://x.com/Alacritic_Super/status/2089987821352403387))
-- [puck](https://github.com/s0lness/puck) - Convention and emulator for apps that travel between tiny computers (RP2350 and ESP32-S3), with harness-verified pixel-exact ports.
 - [openai-realtime-embedded](https://github.com/openai/openai-realtime-embedded) - OpenAI's official SDK for talking to the Realtime API over WebRTC from an ESP32-S3.
+
+### Emulators & simulators
+
+- [Wokwi](https://github.com/wokwi) - Simulate ESP32 boards, sensors and displays in the browser; the fastest way to try firmware with no hardware on the desk. ([simulator](https://wokwi.com))
+- [espressif/qemu](https://github.com/espressif/qemu) - Espressif's QEMU fork: full-system ESP32 emulation for CI and debugging.
+- [puck](https://github.com/s0lness/puck) - Convention and emulator for apps that travel between tiny computers (RP2350 and ESP32-S3), with harness-verified pixel-exact ports.
 
 ## License
 

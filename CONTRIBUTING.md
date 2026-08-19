@@ -9,6 +9,7 @@ Suggestions welcome. The bar is "worth building, copying, or watching run", not 
 - Format: `- [name](link-to-repo) - What it is, one sentence ending with a period.`
 - The link must point to a **source repository** (or the closest thing to one). Product pages, videos, and blog posts can complement it as a trailing `([demo](url))`, never replace it.
 - Descriptions state what the project does, not that it is "awesome", "simple", or "blazing fast".
+- If the project is a platform with a plugin/community scene around it, end the line with the `` `ecosystem` `` tag. Self-contained apps get no tag. Don't invent new tags in a PR; propose them in an issue.
 - The project should be alive: builds against a current toolchain, or is finished and still works.
 
 ## Removing or moving a project

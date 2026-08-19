@@ -14,6 +14,9 @@ The deliverable is `README.md`. `bun scripts/check-links.ts` verifies every link
 - Demo links (tweet, video) ride along as a trailing `([demo](url))`; they never replace the repo link.
 - Descriptions: one sentence, factual, no superlatives.
 - Two fixed top-level sections: **Applications** (things people built and run on an ESP32) and **Tools, utilities & libraries**. An entry's home is decided by what it IS, not what it enables: firmware you flash and use is an application, a framework/SDK/flasher is a tool.
+- Structure encodes PURPOSE only (with one exception: display medium, since e-paper vs live screens is the purpose there). Scale, board, and everything else lives in the description.
+- Tags: a controlled vocabulary of trailing backtick tokens, currently just `` `ecosystem` `` (a platform with a community/plugin scene around it, vs a self-contained app). Tag ONLY the exception, never the default. A new tag type needs ≥3 entries that would carry it AND a reader question the prose can't answer; adding one is a deliberate decision, not per-entry improvisation. No badges, no `<kbd>`, no legends.
+- A new subcategory needs ≥3 entries (external PRs proposing one with a single strong entry may be accepted, like Remote access was).
 - Subcategories are provisional by design. When a category passes ~12 entries or the overall list doubles, restructure freely; do not preserve the current taxonomy out of caution.
 - New entries go at the bottom of their category.
 - README style: no badges, no ASCII art, no screenshots grid.
