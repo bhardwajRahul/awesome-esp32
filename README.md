@@ -10,6 +10,7 @@ Two top-level sections: **Applications** are actual things people have built and
 
 - [chat-stick](https://github.com/steveruizok/chat-stick) - Hold-to-talk voice interface to Gemini Live on an ESP32-S3 stick, with persistent timers, server-side tools, and OTA updates.
 - [xiaozhi-esp32](https://github.com/78/xiaozhi-esp32) - MCP-based AI chatbot firmware powering a whole ecosystem of talking desk companions.
+- [pixelcat](https://github.com/toddsherman/pixelcat) - Tamagotchi-style pixel cat on an ESP32-S3 AMOLED handheld that learns your schedule, reacts to touch and sound, and can never irrecoverably die.
 
 ### Displays & ambient screens
 
