@@ -57,7 +57,7 @@ Most of this section (plus pixelcat above) targets one board: the [Waveshare ESP
 
 - [ESP Web Tools](https://github.com/esphome/esp-web-tools) - Flash firmware from the browser over WebSerial, no toolchain installed.
 - [openHASP](https://github.com/HASwitchPlate/openHASP) - Build custom touchscreen control panels for home automation, driven over MQTT.
-- [psiop](https://github.com/aap/psiop) - A compact software 3D rendering library for the ESP32.
+- [psiop](https://github.com/aap/psiop) - A compact software 3D rendering library for the ESP32. ([demo](https://x.com/Alacritic_Super/status/2089987821352403387))
 - [puck](https://github.com/s0lness/puck) - Convention and emulator for apps that travel between tiny computers (RP2350 and ESP32-S3), with harness-verified pixel-exact ports.
 - [openai-realtime-embedded](https://github.com/openai/openai-realtime-embedded) - OpenAI's official SDK for talking to the Realtime API over WebRTC from an ESP32-S3.
 
