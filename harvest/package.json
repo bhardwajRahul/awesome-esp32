@@ -1,0 +1,16 @@
+{
+  "name": "awesome-esp32-harvest",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "harvest": "tsx harvest.ts"
+  },
+  "dependencies": {
+    "patchright": "^1.61.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

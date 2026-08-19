@@ -13,7 +13,8 @@ Nothing to run. The deliverable is `README.md`.
 - Every entry links to a source repository. **Verify the URL resolves** (`git ls-remote <url> HEAD`) before committing an entry.
 - Demo links (tweet, video) ride along as a trailing `([demo](url))`; they never replace the repo link.
 - Descriptions: one sentence, factual, no superlatives.
-- Categories are provisional by design. When a category passes ~12 entries or the overall list doubles, restructure freely; do not preserve the current taxonomy out of caution.
+- Two fixed top-level sections: **Applications** (things people built and run on an ESP32) and **Tools, utilities & libraries**. An entry's home is decided by what it IS, not what it enables: firmware you flash and use is an application, a framework/SDK/flasher is a tool.
+- Subcategories are provisional by design. When a category passes ~12 entries or the overall list doubles, restructure freely; do not preserve the current taxonomy out of caution.
 - New entries go at the bottom of their category.
 - README style: no badges, no ASCII art, no screenshots grid.
 
