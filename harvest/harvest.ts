@@ -83,7 +83,7 @@ function ingestResponse(json: any): number {
 }
 
 async function onResponse(res: Response) {
-  if (!/\/i\/api\/graphql\/[^/]+\/Bookmarks/.test(res.url())) return;
+  if (!/\/i\/api\/graphql\/[^/]+\/Bookmark/.test(res.url())) return;
   try {
     const added = ingestResponse(await res.json());
     if (added) console.log(`captured ${added} new (total ${seen.size})`);
@@ -94,19 +94,25 @@ async function onResponse(res: Response) {
 
 async function waitForTimeline(page: Page): Promise<void> {
   const deadline = Date.now() + LOGIN_WAIT_MS;
-  let announced = false;
+  let lastLogged = "";
   while (Date.now() < deadline) {
     if (seen.size > 0) return;
     const url = page.url();
+    if (url !== lastLogged) {
+      console.log(`at ${url}`);
+      lastLogged = url;
+    }
     // Never navigate while a login flow is on screen.
-    const inLogin = /login|flow|logout|account/.test(url);
+    const inLogin = /login|flow|logout|signup/.test(url);
     const onBookmarks = url.startsWith(BOOKMARKS_URL);
     if (!inLogin && !onBookmarks) {
       // Logged in but landed elsewhere (e.g. /home after auth): steer back.
       await page.goto(BOOKMARKS_URL).catch(() => {});
-    } else if (!onBookmarks && !announced) {
-      console.log("Waiting for login in the Chrome window (one-time)...");
-      announced = true;
+    } else if (onBookmarks) {
+      // On the page but nothing captured yet: nudge a refresh every ~30s in
+      // case the timeline request fired before we were listening.
+      await page.waitForTimeout(27000);
+      if (seen.size === 0) await page.reload().catch(() => {});
     }
     await page.waitForTimeout(3000);
   }
