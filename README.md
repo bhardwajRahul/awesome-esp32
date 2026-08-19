@@ -2,7 +2,7 @@
 
 Hand-picked ESP32 projects worth building, copying, or just watching run. Every entry links to a working repository; demo links are kept when the demo is the point.
 
-Two top-level sections: **Applications** are actual things people have built and run on an ESP32; **Tools, utilities & libraries** is what you build them with. Subcategories are provisional and will be reshaped as the list grows. See [CONTRIBUTING.md](CONTRIBUTING.md) to add a project, or [ideas/ideas.md](ideas/ideas.md) for things waiting to be built.
+Two top-level sections: **Applications** are actual things people have built and run on an ESP32; **Tools, utilities & libraries** is what you build them with. Subcategories are provisional and will be reshaped as the list grows. See [CONTRIBUTING.md](CONTRIBUTING.md) to add a project, or [ideas/ideas.md](ideas/ideas.md) for things waiting to be built. Two field guides distill how the listed projects are built: [ESP32 development practices](guides/esp32-practices.md) (any board) and the [Waveshare AMOLED 1.8 guide](guides/waveshare-amoled-18.md).
 
 ## Applications
 
