@@ -31,7 +31,7 @@ Most of this section (plus pixelcat above) targets one board: the [Waveshare ESP
 
 - [tinydraw](https://github.com/aliceisjustplaying/tinydraw) - Finger-drawing app for ESP32-S3/RP2350 touch AMOLED handhelds, with variable-width ink, zoom, undo, and SVG/PNG export. ([demo](https://x.com/aliceisplaying/status/2087153749240217805))
 - [infinite-golf](https://github.com/MikeWilson/infinite-golf) - Procedurally generated mini-golf on an ESP32-S3 AMOLED handheld; you physically swing the device and the IMU measures the shot.
-- [esp32-gameos](https://github.com/MikeWilson/esp32-gameos) - A handheld gaming OS for the same AMOLED device: launcher plus six fully procedural games at 60 fps, no engine, no asset files.
+- [esp32-gameos](https://github.com/MikeWilson/esp32-gameos) - A handheld gaming OS for the same AMOLED device: launcher plus six fully procedural games at 60 fps, no engine, no asset files. ([demo](https://x.com/mk_wlsn/status/2089740913195274284))
 - [esp32-fluidbox](https://github.com/V4C38/esp32-fluidbox) - A 3D particle fluid living inside the device's case: ~900 particles slosh with the accelerometer as if liquid sat behind the screen. ([demo](https://x.com/JohannesTscharn/status/2085248949061922855))
 - [puck apps](https://github.com/s0lness/puck/tree/master/apps) - Clock, connect 4, and friends: small apps written once against the puck convention, each running on both of its boards. ([live gallery](https://puck.sylve.org))
 
