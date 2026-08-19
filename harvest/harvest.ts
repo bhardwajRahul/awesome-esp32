@@ -97,6 +97,14 @@ async function waitForTimeline(page: Page): Promise<void> {
   let lastLogged = "";
   while (Date.now() < deadline) {
     if (seen.size > 0) return;
+    if (page.isClosed()) {
+      // Window or tab closed mid-login: reopen rather than crash.
+      const other = ctx.pages().find((p) => !p.isClosed());
+      page = other ?? (await ctx.newPage().catch(() => null))!;
+      if (!page) throw new Error("Browser closed before login completed.");
+      page.on("response", onResponse);
+      await page.goto(BOOKMARKS_URL).catch(() => {});
+    }
     const url = page.url();
     if (url !== lastLogged) {
       console.log(`at ${url}`);
