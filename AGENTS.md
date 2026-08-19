@@ -20,7 +20,7 @@ The deliverable is `README.md`. `bun scripts/check-links.ts` verifies every link
 
 ## Sourcing
 
-The primary intake is Sylve pasting links (t.co, github, or tweet URLs) in session; the global `/awesome-esp32-add` skill codifies the procedure (resolve, verify, one-sentence description, classify, demo link, push). `harvest/harvest.ts` is a dormant X-bookmarks scraper (patchright, dedicated Chrome profile): it works but the login flow annoyed Sylve, do NOT relaunch it unless he asks.
+The primary intake is Sylve pasting links (t.co, github, or tweet URLs) in session; the global `/awesome-esp32-add` skill codifies the procedure (resolve, verify, one-sentence description, classify, demo link, push). An X-bookmarks scraper once lived in `harvest/` (patchright, dedicated Chrome profile); it was removed to keep the repo pure markdown, recover it from git history if ever wanted, and do NOT relaunch it unless Sylve asks.
 
 ## Gotchas
 
