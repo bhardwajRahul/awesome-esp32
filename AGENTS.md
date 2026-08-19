@@ -6,7 +6,7 @@
 
 ## How to run
 
-Nothing to run. The deliverable is `README.md`.
+The deliverable is `README.md`. `bun scripts/check-links.ts` verifies every link (a GitHub Action runs it Mondays and files a `linkcheck` issue on failures; export `GITHUB_TOKEN` locally to avoid API rate-limit noise).
 
 ## Conventions
 
@@ -20,7 +20,7 @@ Nothing to run. The deliverable is `README.md`.
 
 ## Sourcing
 
-The primary intake is Sylve's Twitter bookmarks, harvested in interactive browser sessions (no API access to bookmarks exists; the data export omits them). Between harvests, entries arrive one-off: given a tweet URL, resolve the underlying repo, write the entry, commit.
+The primary intake is Sylve pasting links (t.co, github, or tweet URLs) in session; the global `/awesome-esp32-add` skill codifies the procedure (resolve, verify, one-sentence description, classify, demo link, push). `harvest/harvest.ts` is a dormant X-bookmarks scraper (patchright, dedicated Chrome profile): it works but the login flow annoyed Sylve, do NOT relaunch it unless he asks.
 
 ## Gotchas
 
