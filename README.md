@@ -67,6 +67,7 @@ Elsewhere, write-ups by @ardchain posted as threads on X (third-party, not repo 
 ### Utilities & appliances
 
 - [ESP-KVM](https://github.com/espkvm/espkvm) - IP-KVM on an ESP32-P4 and a TC358743 HDMI bridge: captures the target machine's screen, presents itself to that machine as a USB keyboard and mouse, and puts both in a browser, down to the BIOS of a box with no working OS. ([demo](https://espkvm.io/demo/)) `p4` `headless`
+- [Midbar](https://github.com/Northstrix/Midbar) - Advanced hardware data vault designed to maximize the cost of unauthorized access to its owner's data.
 
 ## Tools, utilities & libraries
 
