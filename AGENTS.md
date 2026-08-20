@@ -2,7 +2,7 @@
 
 ## What this is
 
-`awesome-esp32` is a curated public list of ESP32 projects, in the awesome-list tradition: a single `README.md`, entries of the form `- [name](repo) - description. ([demo](url))`. It is a taste-driven project list, not a library index (that niche is taken by agucova/awesome-esp).
+`awesome-esp32` is a curated public list of ESP32 projects (the ESP32 family first, close cousins like the RP2350 when a project ports across chips), in the awesome-list tradition: a single `README.md`, entries of the form `- [name](repo) - description. ([demo](url))`. It is a taste-driven project list, not a library index (that niche is taken by agucova/awesome-esp).
 
 ## How to run
 
@@ -10,13 +10,14 @@ The deliverable is `README.md`. `bun scripts/check-links.ts` verifies every link
 
 ## Conventions
 
+- Inclusion bar: the three gates in `CONTRIBUTING.md`, all required (public source you can build, evidence it ran on real hardware, reproducible by a stranger). Stars are explicitly not a criterion.
 - Every entry links to a source repository. **Verify the URL resolves** (`git ls-remote <url> HEAD`) before committing an entry.
 - Demo links (tweet, video) ride along as a trailing `([demo](url))`; they never replace the repo link.
 - Descriptions: one sentence, factual, no superlatives.
 - Two fixed top-level sections: **Applications** (things people built and run on an ESP32) and **Tools, utilities & libraries**. An entry's home is decided by what it IS, not what it enables: firmware you flash and use is an application, a framework/SDK/flasher is a tool.
-- Structure encodes PURPOSE only (with one exception: display medium, since e-paper vs live screens is the purpose there). Scale, board, and everything else lives in the description.
-- Tags: a controlled vocabulary of trailing backtick tokens, currently just `` `ecosystem` `` (a platform with a community/plugin scene around it, vs a self-contained app). Tag ONLY the exception, never the default. A new tag type needs ≥3 entries that would carry it AND a reader question the prose can't answer; adding one is a deliberate decision, not per-entry improvisation. No badges, no `<kbd>`, no legends.
-- A new subcategory needs ≥3 entries (external PRs proposing one with a single strong entry may be accepted, like Remote access was).
+- Structure encodes PURPOSE only, no exception: the Applications tree answers "what is it for". Hardware answers a different question and lives in tags. There is no `E-paper` category any more (and the word we use is e-ink).
+- Tags: a closed vocabulary of trailing backtick tokens, hardware first then `` `ecosystem` `` last: `` `e-ink` ``, `` `s3-amoled` ``, `` `led-matrix` ``, `` `p4` ``, `` `c3` ``, `` `headless` ``, `` `battery` ``, `` `ecosystem` ``. The table in `CONTRIBUTING.md` defines each. Tag ONLY what the project's own README or demo states; never infer a chip or a battery from a photo. A new tag type needs ≥3 entries that would carry it AND a reader question the prose can't answer; adding one is a deliberate decision, not per-entry improvisation. No badges, no `<kbd>`, no legends.
+- A new subcategory needs ≥3 entries; a single entry never gets its own category, it waits for a second of its kind.
 - Subcategories are provisional by design. When a category passes ~12 entries or the overall list doubles, restructure freely; do not preserve the current taxonomy out of caution.
 - New entries go at the bottom of their category.
 - README style: no badges, no ASCII art, no screenshots grid.
