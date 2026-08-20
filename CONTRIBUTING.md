@@ -2,25 +2,40 @@
 
 Suggestions welcome. The bar is "worth building, copying, or watching run", not "uses an ESP32".
 
+## Before you open a pull request
+
+Two rules reject more pull requests than everything else here combined. Read them first.
+
+**1. The project must have run on real hardware, and you must link the proof.**
+
+Counts: a photo of the thing built and powered, a video of it running, a live demo anyone can open.
+
+Does not count: a 3D render, a PCB viewer, a generated snapshot, a simulator screenshot, a render of an enclosure. A thing that only exists as an image has not run.
+
+**2. A new category needs at least two projects.**
+
+Add your project to a category that already exists in the README. If nothing fits, say so in the pull request and propose the category, then expect it to wait until a second project of its kind shows up. A category with one entry says nothing.
+
+The rest of this document is the detail.
+
 ## What gets in
 
 Three gates. A project needs all three, and one missing gate is a no whatever the other two look like.
 
 1. **Public source you can build.** A repository, not a video-only showcase. If the code is not there, it is not an entry.
-2. **Evidence it ran on real hardware.** A video, photos, or a live demo. Renders and mockups do not count; a thing that only exists as an image has not run.
+2. **Evidence it ran on real hardware.** Rule 1 above: a photo, a video, or a live demo, linked in the pull request.
 3. **Someone else could reproduce it.** The README names the board and says how to flash it.
 
 Then:
 
 - **Stars are not a criterion.** A 0-star project can be more interesting than a 2k-star one, and often is. Do not argue for an entry with its star count, and do not argue against one either.
-- **No new category for a single entry.** If a project fits nowhere, it waits for a second one of its kind. A category with one entry says nothing.
-- **Self-promotion is welcome and must be disclosed.** Submitting your own project is fine, say it is yours in the PR. The same three gates apply.
+- **Self-promotion is welcome and must be disclosed.** Submitting your own project is fine, say it is yours in the pull request. The same three gates apply.
 - **An entry belongs to one purpose category.** Hardware never justifies a new category, it goes in the tags.
 
 ## Adding a project
 
 - One project per pull request, with a short PR title like `Add project-name`.
-- Add it to the bottom of the category that fits best. If none fits, say so in the PR and propose one (see the single-entry rule above).
+- Add it to the bottom of the category that fits best, per rule 2 above.
 - Format: `- [name](link-to-repo) - What it is, one sentence ending with a period.`
 - The link must point to a **source repository** (or the closest thing to one). Product pages, videos, and blog posts can complement it as a trailing `([demo](url))`, never replace it.
 - Descriptions state what the project does, not that it is "awesome", "simple", or "blazing fast".

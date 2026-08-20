@@ -8,7 +8,7 @@ Two top-level sections: **Applications** are actual things people have built and
 
 `s3-amoled` mostly means one board, the [Waveshare ESP32-S3 Touch AMOLED 1.8](https://www.waveshare.com/esp32-s3-touch-amoled-1.8.htm), a pocket-size touchscreen with IMU, speaker and battery support. One purchase runs most of the Play section; building for it yourself starts with its field guide in [Guides](#guides).
 
-What gets in, in short: public source you can build, evidence it ran on real hardware, and enough in the README that someone else can reproduce it. Stars are not a criterion. The full version, and how to submit, are in [CONTRIBUTING.md](CONTRIBUTING.md). Things waiting to be built are in [ideas/ideas.md](ideas/ideas.md).
+What gets in, in short: public source you can build, evidence it ran on real hardware (a photo, a video, or a live demo, not a render), and enough in the README that someone else can reproduce it. Stars are not a criterion. The full version, and how to submit, are in [CONTRIBUTING.md](CONTRIBUTING.md). Things waiting to be built are in [ideas/ideas.md](ideas/ideas.md).
 
 ## Guides
 
