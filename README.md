@@ -32,6 +32,7 @@ Elsewhere, write-ups by @ardchain posted as threads on X (third-party, not repo 
 - [pixelcat](https://github.com/toddsherman/pixelcat) - Tamagotchi-style pixel cat on an ESP32-S3 AMOLED handheld that learns your schedule, reacts to touch and sound, and can never irrecoverably die. ([demo](https://x.com/tdd/status/2088804262646288883)) `s3-amoled` `battery`
 - [pocket-pet](https://github.com/frolic/pocket-pet) - Pocket-Pikachu-style virtual-pet watch on an ESP32-S3 AMOLED dev kit: a pixel pet roams a grass field, counts your real steps, sleeps with the screen, and levels up as you walk. `s3-amoled` `battery`
 - [InkSight](https://github.com/datascale-ai/inksight) - E-paper desk companion on an ESP32-C3: 24 display modes (weather, poetry, habit tracking), a community mode marketplace, and browser-based flashing. `e-ink` `c3` `ecosystem`
+- [ESP32 Codex Agent Device](https://github.com/mso96/ESP32-Codex-agent-device) - Physical Codex task-status companion for a Waveshare ESP32-S3 Touch AMOLED 1.8, with lifecycle tracking, runtime and token metrics, and a procedural avatar. ([demo](https://github.com/mso96/ESP32-Codex-agent-device/blob/main/docs/hardware-demo.jpg)) `s3-amoled`
 
 ### Displays & ambient
 
