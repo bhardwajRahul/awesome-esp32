@@ -40,6 +40,7 @@ Elsewhere, write-ups by @ardchain posted as threads on X (third-party, not repo 
 - [esp32-lvgl-watchface](https://github.com/fbiego/esp32-lvgl-watchface) - Renders smartwatch binary watchfaces on a 240x240 LVGL screen, with a converter that turns watchface files into compilable code. ([demo](https://www.youtube.com/watch?v=lvRsTp9v6_k))
 - [OpenEPaperLink](https://github.com/OpenEPaperLink/OpenEPaperLink) - Repurposes electronic shelf labels into a wireless e-paper display network with an ESP32 access point. `e-ink` `ecosystem`
 - [trmnl firmware](https://github.com/usetrmnl/firmware) - Firmware behind the TRMNL e-ink dashboard, an ESP32-C3 driving a battery-friendly plugin ecosystem. `e-ink` `c3` `battery` `ecosystem`
+- [esp32-vertical-card-compass](https://github.com/austinbirch/esp32-vertical-card-compass) - Simulates an aviation vertical-card magnetic compass on an M5Stack CoreS3: the card swings, overshoots, and reproduces the real instrument's errors. ([demo](https://x.com/austinbirch/status/2086535581773828169))
 
 ### Play
 
