@@ -56,6 +56,7 @@ Elsewhere, write-ups by @ardchain posted as threads on X (third-party, not repo 
 
 - [Tasmota](https://github.com/arendst/Tasmota) - Flash-and-forget firmware giving off-the-shelf smart plugs and lights local MQTT control. `ecosystem`
 - [WLED](https://github.com/Aircoookie/WLED) - The addressable-LED firmware, with effects, segments, and an ecosystem of controllers built around it. `ecosystem`
+- [The Lantern Project](https://github.com/Northstrix/Lantern) - ESP-based addressable RGB LED strip controller with 32 modes and 14 lock screens.
 
 ### Radio & comms
 
