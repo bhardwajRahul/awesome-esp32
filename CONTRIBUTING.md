@@ -30,6 +30,7 @@ Then:
 
 - **Stars are not a criterion.** A 0-star project can be more interesting than a 2k-star one, and often is. Do not argue for an entry with its star count, and do not argue against one either.
 - **Self-promotion is welcome and must be disclosed.** Submitting your own project is fine, say it is yours in the pull request. The same three gates apply.
+- **Any device with an ESP32 chip qualifies.** Dev kits, Waveshare, M5Stack, LilyGO, Seeed, Adafruit, or a commercial product that happens to run an ESP32 are all equally welcome. The list is not about one vendor or one board.
 - **An entry belongs to one purpose category.** Hardware never justifies a new category, it goes in the tags.
 
 ## Adding a project
