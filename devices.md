@@ -1,11 +1,9 @@
 # Devices
 
-Every entry in the [README](README.md) names the device it runs on. This file spells
-each name and links where to buy it. Use the name here, character for character, so a
-search of the README finds every project that runs on the same thing.
+It can be difficult knowing which device to get, so every entry in the [README](README.md) names the device it runs on and this file spells
+each name and links where to buy it.
 
-A device gets a section the first time one project uses it. Projects that run on a bare
-ESP32 plus parts, or on dozens of boards, name no device and are listed at the bottom.
+A device gets a section the first time one project uses it. Projects that run on a bare ESP32 plus parts, or on dozens of boards, name no device and are listed at the bottom.
 
 ## Waveshare ESP32-S3-Touch-AMOLED-1.8
 
