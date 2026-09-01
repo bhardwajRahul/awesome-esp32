@@ -1,18 +1,19 @@
 # awesome-esp32
 
-Hand-picked ESP32 projects worth building, copying, or watching run. Every entry links to a working repository.
+Tiny computers are having a moment online, I figured making a list of cool projects people have built using the ESP32 chip would encourage folks to continue tinkering.
 
-Scope is the chip, not a vendor: dev kits, Waveshare and LilyGO boards, M5Stack units, and shipped products like the Ulanzi pixel clock, all on equal terms. Close cousins (RP2350) come in when a project ports across chips.
+The ESP32 is a microcontroller and many packaged devices use it, such as Waveshare and LilyGO boards, M5Stack units, and shipped products like the Ulanzi pixel clock. The projects will state on which of these devices it runs to facilitate discoverability.
 
-**Applications** are things people built and run; **Tools, utilities & libraries** is what you build them with. The Applications tree answers what a project is for; the tags mark what cuts across it: `e-ink`, `s3-amoled`, `led-matrix`, `p4`, `c3`, `headless`, `battery`, `ecosystem`.
+The document is organized like this:
+- **Applications** are things people built and run;
+- **Tools, utilities & libraries** is what you build them with.
+- tags are used to identify what a particular project uses: `e-ink`, `s3-amoled`, `led-matrix`, `p4`, `c3`, `headless`, `battery`, `ecosystem`.
 
-What a project runs on is written in the entry itself, spelled as [devices.md](devices.md) spells it, so searching that name finds every project for the hardware you own.
+If you're getting started and wonder which device to get, the list of devices used in the repo is laid out in [devices.md](devices.md). 
 
-What gets in: public source you can build, proof it ran on real hardware, and a README a stranger can follow. Stars are not a criterion. See [CONTRIBUTING.md](CONTRIBUTING.md); ideas in [ideas/ideas.md](ideas/ideas.md).
+This is a collaborative project, if you've built something cool see [CONTRIBUTING.md](CONTRIBUTING.md) and make a PR. I've also listed some ideas in [ideas/ideas.md](ideas/ideas.md).
 
 ## Guides
-
-In this repo, distilled from how the listed projects are built:
 
 - [ESP32 development practices](guides/esp32-practices.md) - Board-agnostic lessons pulled from every listed project, each cited to the one that learned it: choosing a stack, holding a board matrix, memory discipline, watchdogs, OTA, connectivity, power.
 - [Waveshare AMOLED 1.8 guide](guides/waveshare-amoled-18.md) - Field notes for the `s3-amoled` board, measured on real hardware: pin map, CO5300 panel, touch, IMU, audio codec, power and battery, and a condensed do-not list.
