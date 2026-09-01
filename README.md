@@ -35,6 +35,7 @@ Elsewhere, write-ups by @ardchain posted as threads on X (third-party, not repo 
 - [pocket-pet](https://github.com/frolic/pocket-pet) - Pocket-Pikachu-style virtual-pet watch on a Waveshare ESP32-S3-Touch-AMOLED-2.06: a pixel pet roams a grass field, counts your real steps, sleeps with the screen, and levels up as you walk. `Waveshare ESP32-S3-Touch-AMOLED-2.06`
 - [InkSight](https://github.com/datascale-ai/inksight) - E-paper desk companion built from an ESP32-C3 board and a 4.2-inch panel: 24 display modes (weather, poetry, habit tracking), a community mode marketplace, and browser-based flashing.
 - [ESP32 Codex Agent Device](https://github.com/mso96/ESP32-Codex-agent-device) - Physical Codex task-status companion for a Waveshare ESP32-S3-Touch-AMOLED-1.8, with lifecycle tracking, runtime and token metrics, and a procedural avatar. ([demo](https://github.com/mso96/ESP32-Codex-agent-device/blob/main/docs/hardware-demo.jpg)) `Waveshare ESP32-S3-Touch-AMOLED-1.8`
+- [Vibe Watch](https://github.com/GOROman/vibewatch) - Wrist-worn M5Stack StopWatch controller for parallel AI coding agents, with physical approve/reject, haptics, and BLE HID. ([demo](https://x.com/GOROman/status/2094369107781283991)) `M5Stack StopWatch`
 
 ### Displays & ambient
 
