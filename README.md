@@ -52,6 +52,9 @@ Elsewhere, write-ups by @ardchain posted as threads on X (third-party, not repo 
 - [puck apps](https://github.com/s0lness/puck/tree/master/apps) - Clock, connect 4, and friends: small apps written once against the puck convention, each running on both of its boards. ([live gallery](https://puck.sylve.org)) `s3-amoled`
 - [67](https://github.com/canwar-dj/67) - Throw-and-catch party game for an ESP32-S3 AMOLED handheld; the screen flickers random numbers while airborne and locks in on catch, landing on a red 67 one time in five to pick a loser. ([demo](https://x.com/kanwardigvijay/status/2090090888659898500)) `s3-amoled`
 
+### Robots
+- [MicroLink Crawler](https://github.com/GEH00073/MicroLink_Crawler) - A 30 mm FPV exploration crawler with 7 mm 3D-printed tracks, live video, orientation telemetry, and onboard red-object detection. ([demo](https://www.hackster.io/user2729037/microlink-crawler-379ff1))
+
 ### Home & control
 
 - [Tasmota](https://github.com/arendst/Tasmota) - Flash-and-forget firmware giving off-the-shelf smart plugs and lights local MQTT control. `ecosystem`
