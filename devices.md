@@ -91,6 +91,7 @@ instead:
 - **squeezelite-esp32**: a bare ESP32, usually with an I2S DAC board when you want sound
   out of the device rather than streamed on to another endpoint.
 - **esp32_basic_synth**: a bare ESP32 and a DAC, nothing else.
+- **The Lantern Project**: two boards you wire yourself, an ESP32 as the remote and an ESP8266 as the receiver, plus an addressable RGB strip. Circuit diagrams for both sides are in the repo.
 - **HomePoint**: any ESP32 carrying a screen; it ships prebuilt binaries for a generic
   module and for an M5Stack.
 - **esp32-lvgl-watchface**: any board with a 240x240 display that LVGL can drive.

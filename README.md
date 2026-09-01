@@ -62,6 +62,7 @@ Elsewhere, write-ups by @ardchain posted as threads on X (third-party, not repo 
 
 - [Tasmota](https://github.com/arendst/Tasmota) - Flash-and-forget firmware giving off-the-shelf smart plugs and lights local MQTT control, on a device list of its own that runs to thousands.
 - [WLED](https://github.com/Aircoookie/WLED) - The addressable-LED firmware, with effects, segments, and an ecosystem of controllers built around it.
+- [The Lantern Project](https://github.com/Northstrix/Lantern) - Addressable RGB LED strip controller you build as a pair: an ESP32 remote with 32 modes and 14 lock screens, talking to an ESP8266 that drives the strip. ([demo](https://www.instructables.com/DIY-Addressable-RGB-LED-Strip-Controller/))
 
 ### Radio & comms
 
