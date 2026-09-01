@@ -38,6 +38,9 @@ Then:
 - One project per pull request, with a short PR title like `Add project-name`.
 - Add it to the bottom of the category that fits best, per rule 2 above.
 - Format: `- [name](link-to-repo) - What it is, one sentence ending with a period.`
+- **Name the device you built it on**, spelled exactly as [devices.md](devices.md) spells it. That spelling is what makes a search of the README find every project for one piece of hardware, so `Waveshare ESP32-S3-Touch-AMOLED-1.8` and `the AMOLED board` are not interchangeable. If your device has no section yet, add one in the same pull request: name, one line of what it is, and the manufacturer's page.
+- If several devices are involved, say which: all of them required, one of them at your choice, or one plus optional extras. A reader is deciding what to buy.
+- Some projects honestly have no device. Firmware that runs on dozens of boards points at its own compatibility list, and a build from a bare ESP32 plus parts says so. Do not invent a device to satisfy the rule.
 - The link must point to a **source repository** (or the closest thing to one). Product pages, videos, and blog posts can complement it as a trailing `([demo](url))`, never replace it.
 - Descriptions state what the project does, not that it is "awesome", "simple", or "blazing fast".
 - The project should be alive: builds against a current toolchain, or is finished and still works.
@@ -51,7 +54,7 @@ Tags are a closed set, written at the end of the entry line as backticked tokens
 | Tag | Means |
 |---|---|
 | `e-ink` | Drives an e-ink or e-paper panel. |
-| `s3-amoled` | Runs on an ESP32-S3 touch AMOLED handheld (usually the Waveshare 1.8). |
+| `s3-amoled` | Runs on a touch AMOLED handheld of the Waveshare shape; the exact device is named in the entry. |
 | `led-matrix` | Output is an addressable LED matrix, not a framebuffer panel. |
 | `p4` | ESP32-P4. |
 | `c3` | ESP32-C3. |

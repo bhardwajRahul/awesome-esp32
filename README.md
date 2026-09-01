@@ -4,7 +4,9 @@ Hand-picked ESP32 projects worth building, copying, or watching run. Every entry
 
 Scope is the chip, not a vendor: dev kits, Waveshare and LilyGO boards, M5Stack units, and shipped products like the Ulanzi pixel clock, all on equal terms. Close cousins (RP2350) come in when a project ports across chips.
 
-**Applications** are things people built and run; **Tools, utilities & libraries** is what you build them with. The Applications tree answers what a project is for; what it runs on lives in the tags: `e-ink`, `s3-amoled`, `led-matrix`, `p4`, `c3`, `headless`, `battery`, `ecosystem`. `s3-amoled` is the [Waveshare ESP32-S3 Touch AMOLED 1.8](https://www.waveshare.com/product/esp32-related/boards-kits/esp32-s3/esp32-s3-touch-amoled-1.8.htm); every other board is named in the entry text.
+**Applications** are things people built and run; **Tools, utilities & libraries** is what you build them with. The Applications tree answers what a project is for; the tags mark what cuts across it: `e-ink`, `s3-amoled`, `led-matrix`, `p4`, `c3`, `headless`, `battery`, `ecosystem`.
+
+What a project runs on is written in the entry itself, spelled as [devices.md](devices.md) spells it, so searching that name finds every project for the hardware you own.
 
 What gets in: public source you can build, proof it ran on real hardware, and a README a stranger can follow. Stars are not a criterion. See [CONTRIBUTING.md](CONTRIBUTING.md); ideas in [ideas/ideas.md](ideas/ideas.md).
 
@@ -25,41 +27,41 @@ Elsewhere, write-ups by @ardchain posted as threads on X (third-party, not repo 
 
 ### Companions
 
-- [chat-stick](https://github.com/steveruizok/chat-stick) - Hold-to-talk voice interface to Gemini Live on an ESP32-S3 stick, with persistent timers, server-side tools, and OTA updates. ([demo](https://x.com/steveruizok/status/2081132808341176405)) `s3-amoled`
-- [xiaozhi-esp32](https://github.com/78/xiaozhi-esp32) - MCP-based AI chatbot firmware powering a whole ecosystem of talking desk companions. `ecosystem`
-- [pixelcat](https://github.com/toddsherman/pixelcat) - Tamagotchi-style pixel cat on an ESP32-S3 AMOLED handheld that learns your schedule, reacts to touch and sound, and can never irrecoverably die. ([demo](https://x.com/tdd/status/2088804262646288883)) `s3-amoled` `battery`
-- [pocket-pet](https://github.com/frolic/pocket-pet) - Pocket-Pikachu-style virtual-pet watch on an ESP32-S3 AMOLED dev kit: a pixel pet roams a grass field, counts your real steps, sleeps with the screen, and levels up as you walk. `s3-amoled` `battery`
-- [InkSight](https://github.com/datascale-ai/inksight) - E-paper desk companion on an ESP32-C3: 24 display modes (weather, poetry, habit tracking), a community mode marketplace, and browser-based flashing. `e-ink` `c3` `ecosystem`
-- [ESP32 Codex Agent Device](https://github.com/mso96/ESP32-Codex-agent-device) - Physical Codex task-status companion for a Waveshare ESP32-S3 Touch AMOLED 1.8, with lifecycle tracking, runtime and token metrics, and a procedural avatar. ([demo](https://github.com/mso96/ESP32-Codex-agent-device/blob/main/docs/hardware-demo.jpg)) `s3-amoled`
+- [chat-stick](https://github.com/steveruizok/chat-stick) - Hold-to-talk voice interface to Gemini Live, with persistent timers, server-side tools and OTA updates, running on either an M5StickS3 or a Waveshare ESP32-S3-Touch-AMOLED-1.8. ([demo](https://x.com/steveruizok/status/2081132808341176405)) `s3-amoled`
+- [xiaozhi-esp32](https://github.com/78/xiaozhi-esp32) - MCP-based AI chatbot firmware powering a whole ecosystem of talking desk companions, across dozens of boards it lists itself. `ecosystem`
+- [pixelcat](https://github.com/toddsherman/pixelcat) - Tamagotchi-style pixel cat on a Waveshare ESP32-S3-Touch-AMOLED-1.8 that learns your schedule, reacts to touch and sound, and can never irrecoverably die. ([demo](https://x.com/tdd/status/2088804262646288883)) `s3-amoled` `battery`
+- [pocket-pet](https://github.com/frolic/pocket-pet) - Pocket-Pikachu-style virtual-pet watch on a Waveshare ESP32-S3-Touch-AMOLED-2.06: a pixel pet roams a grass field, counts your real steps, sleeps with the screen, and levels up as you walk. `s3-amoled` `battery`
+- [InkSight](https://github.com/datascale-ai/inksight) - E-paper desk companion built from an ESP32-C3 board and a 4.2-inch panel: 24 display modes (weather, poetry, habit tracking), a community mode marketplace, and browser-based flashing. `e-ink` `c3` `ecosystem`
+- [ESP32 Codex Agent Device](https://github.com/mso96/ESP32-Codex-agent-device) - Physical Codex task-status companion for a Waveshare ESP32-S3-Touch-AMOLED-1.8, with lifecycle tracking, runtime and token metrics, and a procedural avatar. ([demo](https://github.com/mso96/ESP32-Codex-agent-device/blob/main/docs/hardware-demo.jpg)) `s3-amoled`
 
 ### Displays & ambient
 
-- [awtrix3](https://github.com/Blueforcer/awtrix3) - Turns an Ulanzi pixel clock into a scriptable smart display with a large community of apps. `led-matrix` `ecosystem`
-- [HomePoint](https://github.com/sieren/HomePoint) - A small ESP32 screen for switching MQTT and HomeKit devices.
-- [esp32-lvgl-watchface](https://github.com/fbiego/esp32-lvgl-watchface) - Renders smartwatch binary watchfaces on a 240x240 LVGL screen, with a converter that turns watchface files into compilable code. ([demo](https://www.youtube.com/watch?v=lvRsTp9v6_k))
+- [awtrix3](https://github.com/Blueforcer/awtrix3) - Turns an Ulanzi Smart Pixel Clock TC001 into a scriptable smart display with a large community of apps. `led-matrix` `ecosystem`
+- [HomePoint](https://github.com/sieren/HomePoint) - Switches MQTT and HomeKit devices from a small screen, shipped as prebuilt binaries for a generic ESP32 module or an M5Stack.
+- [esp32-lvgl-watchface](https://github.com/fbiego/esp32-lvgl-watchface) - Renders smartwatch binary watchfaces on any board carrying a 240x240 LVGL screen, with a converter that turns watchface files into compilable code. ([demo](https://www.youtube.com/watch?v=lvRsTp9v6_k))
 - [OpenEPaperLink](https://github.com/OpenEPaperLink/OpenEPaperLink) - Repurposes electronic shelf labels into a wireless e-paper display network with an ESP32 access point. `e-ink` `ecosystem`
 - [trmnl firmware](https://github.com/usetrmnl/firmware) - Firmware behind the TRMNL e-ink dashboard, an ESP32-C3 driving a battery-friendly plugin ecosystem. `e-ink` `c3` `battery` `ecosystem`
 - [esp32-vertical-card-compass](https://github.com/austinbirch/esp32-vertical-card-compass) - Simulates an aviation vertical-card magnetic compass on an M5Stack CoreS3: the card swings, overshoots, and reproduces the real instrument's errors. ([demo](https://x.com/austinbirch/status/2086535581773828169))
 
 ### Play
 
-- [tinydraw](https://github.com/aliceisjustplaying/tinydraw) - Finger-drawing app for ESP32-S3/RP2350 touch AMOLED handhelds, with variable-width ink, zoom, undo, and SVG/PNG export. ([demo](https://x.com/aliceisplaying/status/2087153749240217805)) `s3-amoled`
-- [infinite-golf](https://github.com/MikeWilson/infinite-golf) - Procedurally generated mini-golf on an ESP32-S3 AMOLED handheld; you physically swing the device and the IMU measures the shot. ([demo](https://x.com/mk_wlsn/status/2087389762042958242)) `s3-amoled`
-- [esp32-gameos](https://github.com/MikeWilson/esp32-gameos) - A handheld gaming OS for the same AMOLED device: launcher plus six fully procedural games at 60 fps, no engine, no asset files. ([demo](https://x.com/mk_wlsn/status/2089740913195274284)) `s3-amoled`
-- [esp32-fluidbox](https://github.com/V4C38/esp32-fluidbox) - A 3D particle fluid living inside the device's case: ~900 particles slosh with the accelerometer as if liquid sat behind the screen. ([demo](https://x.com/JohannesTscharn/status/2085248949061922855)) `s3-amoled`
-- [puck apps](https://github.com/s0lness/puck/tree/master/apps) - Clock, connect 4, and friends: small apps written once against the puck convention, each running on both of its boards. ([live gallery](https://puck.sylve.org)) `s3-amoled`
-- [67](https://github.com/canwar-dj/67) - Throw-and-catch party game for an ESP32-S3 AMOLED handheld; the screen flickers random numbers while airborne and locks in on catch, landing on a red 67 one time in five to pick a loser. ([demo](https://x.com/kanwardigvijay/status/2090090888659898500)) `s3-amoled`
+- [tinydraw](https://github.com/aliceisjustplaying/tinydraw) - Finger-drawing app for the Waveshare ESP32-S3-Touch-AMOLED-1.8 and RP2350-Touch-AMOLED-1.8, with variable-width ink, zoom, undo, and SVG/PNG export. ([demo](https://x.com/aliceisplaying/status/2087153749240217805)) `s3-amoled`
+- [infinite-golf](https://github.com/MikeWilson/infinite-golf) - Procedurally generated mini-golf on a Waveshare ESP32-S3-Touch-AMOLED-1.8; you physically swing the device and the IMU measures the shot. ([demo](https://x.com/mk_wlsn/status/2087389762042958242)) `s3-amoled`
+- [esp32-gameos](https://github.com/MikeWilson/esp32-gameos) - A handheld gaming OS for the Waveshare ESP32-S3-Touch-AMOLED-1.8: launcher plus six fully procedural games at 60 fps, no engine, no asset files. ([demo](https://x.com/mk_wlsn/status/2089740913195274284)) `s3-amoled`
+- [esp32-fluidbox](https://github.com/V4C38/esp32-fluidbox) - A 3D particle fluid living inside the case of a Waveshare ESP32-S3-Touch-AMOLED-1.8: ~900 particles slosh with the accelerometer as if liquid sat behind the screen. ([demo](https://x.com/JohannesTscharn/status/2085248949061922855)) `s3-amoled`
+- [puck apps](https://github.com/s0lness/puck/tree/master/apps) - Clock, connect 4, and friends: small apps written once against the puck convention, each running on both the Waveshare ESP32-S3-Touch-AMOLED-1.8 and the RP2350-Touch-AMOLED-1.8. ([live gallery](https://puck.sylve.org)) `s3-amoled`
+- [67](https://github.com/canwar-dj/67) - Throw-and-catch party game for a Waveshare ESP32-S3-Touch-AMOLED-2.06; the screen flickers random numbers while airborne and locks in on catch, landing on a red 67 one time in five to pick a loser. ([demo](https://x.com/kanwardigvijay/status/2090090888659898500)) `s3-amoled`
 
 ### Home & control
 
-- [Tasmota](https://github.com/arendst/Tasmota) - Flash-and-forget firmware giving off-the-shelf smart plugs and lights local MQTT control. `ecosystem`
+- [Tasmota](https://github.com/arendst/Tasmota) - Flash-and-forget firmware giving off-the-shelf smart plugs and lights local MQTT control, on a device list of its own that runs to thousands. `ecosystem`
 - [WLED](https://github.com/Aircoookie/WLED) - The addressable-LED firmware, with effects, segments, and an ecosystem of controllers built around it. `ecosystem`
 
 ### Radio & comms
 
-- [Meshtastic](https://github.com/meshtastic/firmware) - Off-grid, encrypted LoRa mesh messaging; the reference ESP32 radio project. `ecosystem`
-- [Waycast](https://github.com/alviso/waycast) - Car-to-car LoRa mesh on an ESP32-P4 touchscreen dashboard: geo-ephemeral hazard reports, convoy position sharing, and offline maps, with no cellular dependency. ([site](https://waycast.io)) `p4`
-- [familybox](https://github.com/F86Pilot/familybox) - Photo and voice messages between a travelling parent and a child too young to read: the phone sends, the device shows the photo, and two buttons play the note or record a reply. ([demo](https://x.com/pmtiegs/status/2090134879875051709)) `s3-amoled`
+- [Meshtastic](https://github.com/meshtastic/firmware) - Off-grid, encrypted LoRa mesh messaging on the LoRa boards it lists itself; the reference ESP32 radio project. `ecosystem`
+- [Waycast](https://github.com/alviso/waycast) - Car-to-car LoRa mesh on a Waveshare ESP32-P4-Module-DEV-KIT with a 7-inch touch panel, a USB LoRa dongle and a USB GPS: geo-ephemeral hazard reports, convoy position sharing, and offline maps, with no cellular dependency. ([site](https://waycast.io)) `p4`
+- [familybox](https://github.com/F86Pilot/familybox) - Photo and voice messages between a travelling parent and a child too young to read: the phone sends, a Waveshare ESP32-S3-Touch-AMOLED-1.8 shows the photo, and two buttons play the note or record a reply. ([demo](https://x.com/pmtiegs/status/2090134879875051709)) `s3-amoled`
 
 ### Audio & music
 
@@ -68,8 +70,8 @@ Elsewhere, write-ups by @ardchain posted as threads on X (third-party, not repo 
 
 ### Utilities & appliances
 
-- [ESP-KVM](https://github.com/espkvm/espkvm) - IP-KVM on an ESP32-P4 and a TC358743 HDMI bridge: captures the target machine's screen, presents itself to that machine as a USB keyboard and mouse, and puts both in a browser, down to the BIOS of a box with no working OS. ([demo](https://espkvm.io/demo/)) `p4` `headless`
-- [Midbar](https://github.com/Northstrix/Midbar) - Hardware data vault for credentials and notes: keys derive from the boot-time master password, joined by RFID cards on some versions.
+- [ESP-KVM](https://github.com/espkvm/espkvm) - IP-KVM on a Waveshare ESP32-P4-ETH and a TC358743 HDMI bridge: captures the target machine's screen, presents itself to that machine as a USB keyboard and mouse, and puts both in a browser, down to the BIOS of a box with no working OS. ([demo](https://espkvm.io/demo/)) `p4` `headless`
+- [Midbar](https://github.com/Northstrix/Midbar) - Hardware data vault for credentials and notes, built across a dozen MCUs including the ESP32: keys derive from the boot-time master password, joined by RFID cards on some versions.
 
 ## Tools, utilities & libraries
 
