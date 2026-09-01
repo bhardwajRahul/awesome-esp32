@@ -31,7 +31,7 @@ Then:
 - **Stars are not a criterion.** A 0-star project can be more interesting than a 2k-star one, and often is. Do not argue for an entry with its star count, and do not argue against one either.
 - **Self-promotion is welcome and must be disclosed.** Submitting your own project is fine, say it is yours in the pull request. The same three gates apply.
 - **Any device with an ESP32 chip qualifies.** Dev kits, Waveshare, M5Stack, LilyGO, Seeed, Adafruit, or a commercial product that happens to run an ESP32 are all equally welcome. The list is not about one vendor or one board.
-- **An entry belongs to one purpose category.** Hardware never justifies a new category, it goes in the tags.
+- **An entry belongs to one purpose category.** Hardware never justifies a new category, it goes at the end of the line.
 
 ## Adding a project
 
@@ -47,22 +47,24 @@ Then:
 
 ## Categories and tags
 
-The Applications tree answers one question, what a project is for. Hardware facts answer a different one and live in tags, so a board never creates a category.
+The Applications tree answers one question, what a project is for. Hardware facts answer a different one and ride at the end of the entry line, so a board never creates a category.
 
-Tags are a closed set, written at the end of the entry line as backticked tokens, hardware first and `ecosystem` last:
+Every entry ends with the device it runs on, in backticks, spelled exactly as
+[devices.md](devices.md) spells it: `` `Waveshare ESP32-S3-Touch-AMOLED-1.8` ``. Several
+devices are joined by `and` when all are required, `or` when it is your choice.
+
+A project with no single device ends with a tag instead. That is a short closed set:
 
 | Tag | Means |
 |---|---|
 | `e-ink` | Drives an e-ink or e-paper panel. |
-| `s3-amoled` | Runs on a touch AMOLED handheld of the Waveshare shape; the exact device is named in the entry. |
 | `led-matrix` | Output is an addressable LED matrix, not a framebuffer panel. |
 | `p4` | ESP32-P4. |
 | `c3` | ESP32-C3. |
-| `headless` | No local display: the interface is audio, a network, or a browser. |
-| `battery` | Designed to run on battery, with the power work that implies. |
-| `ecosystem` | A platform with a plugin or community scene around it, not a self-contained app. |
 
-Tag only what the project's own README or demo states. Do not infer a chip or a battery from a photo. An untagged entry is the ordinary case, not an oversight. Do not invent new tags in a PR: propose them in an issue, and expect the bar to be at least three entries that would carry the tag.
+A tag never rides alongside a device: the device already says the chip and the screen.
+
+State only what the project's own README or demo states. Do not infer a device or a chip from a photo. Do not invent new tags in a PR: propose them in an issue. Devices are the opposite, they need no bar: add yours to `devices.md` the first time a project uses it.
 
 ## Removing or moving a project
 
