@@ -53,7 +53,8 @@ Elsewhere, write-ups by @ardchain posted as threads on X (third-party, not repo 
 - [67](https://github.com/canwar-dj/67) - Throw-and-catch party game for an ESP32-S3 AMOLED handheld; the screen flickers random numbers while airborne and locks in on catch, landing on a red 67 one time in five to pick a loser. ([demo](https://x.com/kanwardigvijay/status/2090090888659898500)) `s3-amoled`
 
 ### Robots
-- [MicroLink Crawler](https://github.com/GEH00073/MicroLink_Crawler) - A 30 mm FPV exploration crawler with 7 mm 3D-printed tracks, live video, orientation telemetry, and onboard red-object detection. ([demo](https://www.hackster.io/user2729037/microlink-crawler-379ff1))
+
+- [MicroLink Crawler](https://github.com/GEH00073/MicroLink_Crawler) - Pocket FPV exploration rover on 7 mm 3D-printed linked tracks: an M5Stamp Pico drives the motors, an AtomS3R camera streams live video and detects red objects, and an AtomS3 joystick and a Core2 monitor complete the set. ([demo](https://www.hackster.io/user2729037/microlink-crawler-379ff1))
 
 ### Home & control
 
