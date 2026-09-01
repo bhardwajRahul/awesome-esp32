@@ -81,12 +81,21 @@ A shipped ESP32-C3 e-ink dashboard, sold assembled, with a plugin ecosystem behi
 
 ## No single device
 
-These projects name no device on purpose, and adding one would misrepresent them.
+These projects name no device, and inventing one would misrepresent them. What each takes
+instead:
 
-- **Firmware ecosystems** run on dozens of boards and publish their own compatibility
-  list: Tasmota, WLED, Meshtastic, ESPHome, xiaozhi-esp32.
-- **Builds from parts** are a bare ESP32 plus components chosen by the builder:
-  InkSight (ESP32-C3 board plus a 4.2-inch e-paper panel), squeezelite-esp32,
-  esp32_basic_synth, OpenEPaperLink (repurposed shelf labels, many models).
-- **Board-agnostic firmware** runs on whatever carries the right screen or MCU:
-  HomePoint, esp32-lvgl-watchface, Midbar.
+- **InkSight**: an ESP32-C3 development board and a 4.2-inch e-paper panel, wired by you.
+  The project publishes its own purchasing guide and a browser flasher.
+- **OpenEPaperLink**: second-hand electronic shelf labels, many models of them, plus an
+  ESP32 acting as the access point that drives the tags over radio.
+- **squeezelite-esp32**: a bare ESP32, usually with an I2S DAC board when you want sound
+  out of the device rather than streamed on to another endpoint.
+- **esp32_basic_synth**: a bare ESP32 and a DAC, nothing else.
+- **HomePoint**: any ESP32 carrying a screen; it ships prebuilt binaries for a generic
+  module and for an M5Stack.
+- **esp32-lvgl-watchface**: any board with a 240x240 display that LVGL can drive.
+- **Midbar**: versions exist for a dozen microcontrollers including the ESP32, each with
+  its own parts list and its own build.
+- **Tasmota, WLED, Meshtastic, ESPHome, xiaozhi-esp32**: firmware ecosystems running on
+  hundreds to thousands of boards. Each publishes the compatibility list; no short answer
+  here would be true.

@@ -8,7 +8,7 @@ The document is organized like this:
 - **Applications** are things people built and run;
 - **Tools, utilities & libraries** is what you build them with.
 - each entry ends with the device it runs on, in backticks, spelled as [devices.md](devices.md) spells it. Search that name and you get every project for the hardware you own.
-- a handful of projects have no single device (they run on dozens of boards, or on a bare ESP32 plus parts). Those end with a tag instead: `e-ink`, `led-matrix`, `p4`, `c3`.
+- a handful of projects have no single device: they run on dozens of boards, or on a bare ESP32 plus parts you pick yourself. Those end with nothing, and [devices.md](devices.md) says what each one takes.
 
 If you're getting started and wonder which device to get, the list of devices used in the repo is laid out in [devices.md](devices.md). 
 
@@ -33,7 +33,7 @@ Elsewhere, write-ups by @ardchain posted as threads on X (third-party, not repo 
 - [xiaozhi-esp32](https://github.com/78/xiaozhi-esp32) - MCP-based AI chatbot firmware powering a whole ecosystem of talking desk companions, across dozens of boards it lists itself.
 - [pixelcat](https://github.com/toddsherman/pixelcat) - Tamagotchi-style pixel cat on a Waveshare ESP32-S3-Touch-AMOLED-1.8 that learns your schedule, reacts to touch and sound, and can never irrecoverably die. ([demo](https://x.com/tdd/status/2088804262646288883)) `Waveshare ESP32-S3-Touch-AMOLED-1.8`
 - [pocket-pet](https://github.com/frolic/pocket-pet) - Pocket-Pikachu-style virtual-pet watch on a Waveshare ESP32-S3-Touch-AMOLED-2.06: a pixel pet roams a grass field, counts your real steps, sleeps with the screen, and levels up as you walk. `Waveshare ESP32-S3-Touch-AMOLED-2.06`
-- [InkSight](https://github.com/datascale-ai/inksight) - E-paper desk companion built from an ESP32-C3 board and a 4.2-inch panel: 24 display modes (weather, poetry, habit tracking), a community mode marketplace, and browser-based flashing. `e-ink` `c3`
+- [InkSight](https://github.com/datascale-ai/inksight) - E-paper desk companion built from an ESP32-C3 board and a 4.2-inch panel: 24 display modes (weather, poetry, habit tracking), a community mode marketplace, and browser-based flashing.
 - [ESP32 Codex Agent Device](https://github.com/mso96/ESP32-Codex-agent-device) - Physical Codex task-status companion for a Waveshare ESP32-S3-Touch-AMOLED-1.8, with lifecycle tracking, runtime and token metrics, and a procedural avatar. ([demo](https://github.com/mso96/ESP32-Codex-agent-device/blob/main/docs/hardware-demo.jpg)) `Waveshare ESP32-S3-Touch-AMOLED-1.8`
 
 ### Displays & ambient
@@ -41,7 +41,7 @@ Elsewhere, write-ups by @ardchain posted as threads on X (third-party, not repo 
 - [awtrix3](https://github.com/Blueforcer/awtrix3) - Turns an Ulanzi Smart Pixel Clock TC001 into a scriptable smart display with a large community of apps. `Ulanzi Smart Pixel Clock TC001`
 - [HomePoint](https://github.com/sieren/HomePoint) - Switches MQTT and HomeKit devices from a small screen, shipped as prebuilt binaries for a generic ESP32 module or an M5Stack.
 - [esp32-lvgl-watchface](https://github.com/fbiego/esp32-lvgl-watchface) - Renders smartwatch binary watchfaces on any board carrying a 240x240 LVGL screen, with a converter that turns watchface files into compilable code. ([demo](https://www.youtube.com/watch?v=lvRsTp9v6_k))
-- [OpenEPaperLink](https://github.com/OpenEPaperLink/OpenEPaperLink) - Repurposes electronic shelf labels into a wireless e-paper display network with an ESP32 access point. `e-ink`
+- [OpenEPaperLink](https://github.com/OpenEPaperLink/OpenEPaperLink) - Repurposes electronic shelf labels into a wireless e-paper display network with an ESP32 access point.
 - [trmnl firmware](https://github.com/usetrmnl/firmware) - Firmware behind the TRMNL e-ink dashboard, an ESP32-C3 driving a battery-friendly plugin ecosystem. `TRMNL`
 - [esp32-vertical-card-compass](https://github.com/austinbirch/esp32-vertical-card-compass) - Simulates an aviation vertical-card magnetic compass on an M5Stack CoreS3: the card swings, overshoots, and reproduces the real instrument's errors. ([demo](https://x.com/austinbirch/status/2086535581773828169)) `M5Stack CoreS3`
 

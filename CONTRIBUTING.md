@@ -31,7 +31,7 @@ Then:
 - **Stars are not a criterion.** A 0-star project can be more interesting than a 2k-star one, and often is. Do not argue for an entry with its star count, and do not argue against one either.
 - **Self-promotion is welcome and must be disclosed.** Submitting your own project is fine, say it is yours in the pull request. The same three gates apply.
 - **Any device with an ESP32 chip qualifies.** Dev kits, Waveshare, M5Stack, LilyGO, Seeed, Adafruit, or a commercial product that happens to run an ESP32 are all equally welcome. The list is not about one vendor or one board.
-- **An entry belongs to one purpose category.** Hardware never justifies a new category, it goes at the end of the line.
+- **An entry belongs to one purpose category.** Hardware never justifies a new category, the device name at the end of the line carries it.
 
 ## Adding a project
 
@@ -45,26 +45,18 @@ Then:
 - Descriptions state what the project does, not that it is "awesome", "simple", or "blazing fast".
 - The project should be alive: builds against a current toolchain, or is finished and still works.
 
-## Categories and tags
+## Categories and devices
 
 The Applications tree answers one question, what a project is for. Hardware facts answer a different one and ride at the end of the entry line, so a board never creates a category.
 
 Every entry ends with the device it runs on, in backticks, spelled exactly as
 [devices.md](devices.md) spells it: `` `Waveshare ESP32-S3-Touch-AMOLED-1.8` ``. Several
-devices are joined by `and` when all are required, `or` when it is your choice.
+devices are joined by `and` when all of them are required, `or` when it is your choice.
 
-A project with no single device ends with a tag instead. That is a short closed set:
-
-| Tag | Means |
-|---|---|
-| `e-ink` | Drives an e-ink or e-paper panel. |
-| `led-matrix` | Output is an addressable LED matrix, not a framebuffer panel. |
-| `p4` | ESP32-P4. |
-| `c3` | ESP32-C3. |
-
-A tag never rides alongside a device: the device already says the chip and the screen.
-
-State only what the project's own README or demo states. Do not infer a device or a chip from a photo. Do not invent new tags in a PR: propose them in an issue. Devices are the opposite, they need no bar: add yours to `devices.md` the first time a project uses it.
+There are no tags. A project with no single device ends with nothing, and says in
+`devices.md` what it takes instead: an ESP32 plus parts you pick, any board carrying the
+right screen, or a firmware ecosystem with its own compatibility list. Do not invent a
+device to fill the slot, and state only what the project's own README or demo states.
 
 ## Removing or moving a project
 
