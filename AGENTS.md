@@ -6,7 +6,7 @@
 
 ## How to run
 
-The deliverable is `README.md`. `bun scripts/check-links.ts` verifies every link (a GitHub Action runs it Mondays and files a `linkcheck` issue on failures; export `GITHUB_TOKEN` locally to avoid API rate-limit noise).
+The deliverable is `README.md`, and it is the only thing to run: read it. The repo is markdown and nothing else, no build, no CI, no scripts.
 
 ## Conventions
 
@@ -26,6 +26,8 @@ The deliverable is `README.md`. `bun scripts/check-links.ts` verifies every link
 ## Sourcing
 
 The primary intake is Sylve pasting links (t.co, github, or tweet URLs) in session; the global `/awesome-esp32-add` skill codifies the procedure (resolve, verify, one-sentence description, classify, demo link, push). An X-bookmarks scraper once lived in `harvest/` (patchright, dedicated Chrome profile); it was removed to keep the repo pure markdown, recover it from git history if ever wanted, and do NOT relaunch it unless Sylve asks.
+
+A link checker lived in `scripts/check-links.ts` with a Monday GitHub Action until 2026-09-01. Same reasoning, same outcome: it was maintenance tooling for Sylve, not something a contributor needs, so it left the public repo. It now lives at `~/tools/awesome-esp32-linkcheck/check-links.ts` and takes the README path as an argument. Do not add it back.
 
 ## Gotchas
 

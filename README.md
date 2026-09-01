@@ -1,14 +1,12 @@
 # awesome-esp32
 
-Hand-picked ESP32 projects worth building, copying, or just watching run. Every entry links to a working repository; demo links are kept when the demo is the point.
+Hand-picked ESP32 projects worth building, copying, or watching run. Every entry links to a working repository.
 
-Scope: any device built around an ESP32 chip. A bare dev kit, a Waveshare or LilyGO board, the M5Stack family (Core, Dial, StickC, Cardputer), a Seeed XIAO, an Adafruit Feather, or a shipped product such as the Ulanzi pixel clock or the TRMNL: if an ESP32 runs it, it belongs here, and no vendor gets a section of its own. Close cousins (RP2350 and friends) come in when a project ports across chips instead of living on one.
+Scope is the chip, not a vendor: dev kits, Waveshare and LilyGO boards, M5Stack units, and shipped products like the Ulanzi pixel clock, all on equal terms. Close cousins (RP2350) come in when a project ports across chips.
 
-Two top-level sections: **Applications** are actual things people have built and run on an ESP32; **Tools, utilities & libraries** is what you build them with. Inside Applications, the tree answers one question only, what a project is for; the tags answer the other one, what it runs on. Available tags: `e-ink`, `s3-amoled`, `led-matrix`, `p4`, `c3`, `headless`, `battery`, `ecosystem`. They ride at the end of an entry line, and they mark the exception: an entry with no tag is an ordinary ESP32 with an ordinary screen.
+**Applications** are things people built and run; **Tools, utilities & libraries** is what you build them with. The Applications tree answers what a project is for; what it runs on lives in the tags: `e-ink`, `s3-amoled`, `led-matrix`, `p4`, `c3`, `headless`, `battery`, `ecosystem`. `s3-amoled` is the [Waveshare ESP32-S3 Touch AMOLED 1.8](https://www.waveshare.com/product/esp32-related/boards-kits/esp32-s3/esp32-s3-touch-amoled-1.8.htm); every other board is named in the entry text.
 
-A board gets a tag only once it dominates a section. Today that is one board: `s3-amoled` mostly means the [Waveshare ESP32-S3 Touch AMOLED 1.8](https://www.waveshare.com/esp32-s3-touch-amoled-1.8.htm), a pocket-size touchscreen with IMU, speaker and battery support, and one purchase runs most of the Play section (building for it yourself starts with its field guide in [Guides](#guides)). Every other board is named in the entry text, an M5Stack CoreS3 entry says so in its sentence, and earns a tag of its own when three entries share it.
-
-What gets in, in short: public source you can build, evidence it ran on real hardware (a photo, a video, or a live demo, not a render), and enough in the README that someone else can reproduce it. Stars are not a criterion. The full version, and how to submit, are in [CONTRIBUTING.md](CONTRIBUTING.md). Things waiting to be built are in [ideas/ideas.md](ideas/ideas.md).
+What gets in: public source you can build, proof it ran on real hardware, and a README a stranger can follow. Stars are not a criterion. See [CONTRIBUTING.md](CONTRIBUTING.md); ideas in [ideas/ideas.md](ideas/ideas.md).
 
 ## Guides
 
