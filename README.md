@@ -52,6 +52,10 @@ Elsewhere, write-ups by @ardchain posted as threads on X (third-party, not repo 
 - [puck apps](https://github.com/s0lness/puck/tree/master/apps) - Clock, connect 4, and friends: small apps written once against the puck convention, each running on both the Waveshare ESP32-S3-Touch-AMOLED-1.8 and the RP2350-Touch-AMOLED-1.8. ([live gallery](https://puck.sylve.org)) `s3-amoled`
 - [67](https://github.com/canwar-dj/67) - Throw-and-catch party game for a Waveshare ESP32-S3-Touch-AMOLED-2.06; the screen flickers random numbers while airborne and locks in on catch, landing on a red 67 one time in five to pick a loser. ([demo](https://x.com/kanwardigvijay/status/2090090888659898500)) `s3-amoled`
 
+### Robots
+
+- [MicroLink Crawler](https://github.com/GEH00073/MicroLink_Crawler) - Pocket FPV exploration rover on 7 mm 3D-printed linked tracks, needing all four of an M5Stamp Pico for the motors, an M5Stack AtomS3R-CAM for live video and red-object detection, an M5Stack Atom JoyStick to drive it, and an M5Stack Core2 as the monitor. ([demo](https://www.hackster.io/user2729037/microlink-crawler-379ff1))
+
 ### Home & control
 
 - [Tasmota](https://github.com/arendst/Tasmota) - Flash-and-forget firmware giving off-the-shelf smart plugs and lights local MQTT control, on a device list of its own that runs to thousands. `ecosystem`

@@ -48,6 +48,28 @@ ESP32-S3 in the stackable Core case: 320x240 touch screen, IMU, camera, micropho
 speaker, battery base.
 [Product page](https://shop.m5stack.com/products/m5stack-cores3-esp32s3-lotdevelopment-kit)
 
+## M5Stamp Pico
+
+ESP32-PICO stamp-sized module meant to be soldered into a build rather than sit on a desk.
+[Product page](https://shop.m5stack.com/products/m5stamp-pico-diy-kit)
+
+## M5Stack AtomS3R-CAM
+
+ESP32-S3 with 8MB PSRAM and a GC0308 camera in the Atom footprint, roughly a 24mm cube.
+[Product page](https://shop.m5stack.com/products/atoms3r-camera-kit)
+
+## M5Stack Atom JoyStick
+
+Two analogue sticks and buttons in a battery-powered base, shipped with an M5AtomS3 in it.
+[Product page](https://shop.m5stack.com/products/atom-joystick-with-m5atoms3)
+
+## M5Stack Core2
+
+ESP32 in the stackable Core case: 320x240 touch screen, IMU, speaker, battery base.
+Discontinued by M5Stack, and the CoreS3 above is its successor in the same case, so check
+what you can still get before buying a project that names it.
+[Product page](https://shop.m5stack.com/products/m5stack-core2-esp32-iot-development-kit-v1-1)
+
 ## Ulanzi Smart Pixel Clock TC001
 
 A shipped consumer clock built on an ESP32 driving a 32x8 addressable LED matrix, with
