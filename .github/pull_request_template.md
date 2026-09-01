@@ -5,7 +5,7 @@ A photo of the thing built and powered, a video of it running, or a live demo an
 
 **Source repository:**
 
-**Device it runs on:** spelled exactly as [devices.md](../devices.md) spells it. If it is not listed there, add a section for it in this pull request: exact name, one line of what it is, link to the maker's product page.
+**Device it runs on:** spelled exactly as [devices.md](https://github.com/s0lness/awesome-esp32/blob/main/devices.md) spells it. If it is not listed there, add a section for it in this pull request: exact name, one line of what it is, link to the maker's product page.
 
 **What is it, one sentence:**
 
