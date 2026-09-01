@@ -10,7 +10,7 @@ The deliverable is `README.md`, and it is the only thing to run: read it. The re
 
 ## Conventions
 
-- Inclusion bar: the three gates in `CONTRIBUTING.md`, all required (public source you can build, evidence it ran on real hardware, reproducible by a stranger). Stars are explicitly not a criterion. `CONTRIBUTING.md` opens with a **Before you open a pull request** block that states the two blocking rules (linked hardware proof, no category for a single project) ahead of everything else, and `.github/pull_request_template.md` asks for the same two things at the moment someone writes the PR. Reword one and reword the other.
+- Inclusion bar: the three gates in `CONTRIBUTING.md`, all required (public source you can build, evidence it ran on real hardware, reproducible by a stranger). Stars are explicitly not a criterion. `CONTRIBUTING.md` opens with a **Before you open a pull request** block that states the two blocking rules (linked hardware proof, no category for a single project) ahead of everything else, and `.github/pull_request_template.md` asks for the same things at the moment someone writes the PR, plus the device. Reword one and reword the other. Two device rules live in both: a project supporting several devices must say which one its hardware proof was captured on (supported and demonstrated are different claims), and a device missing from `devices.md` is added by the PR that first uses it, no bar to clear.
 - Every entry links to a source repository. **Verify the URL resolves** (`git ls-remote <url> HEAD`) before committing an entry.
 - Demo links (tweet, video) ride along as a trailing `([demo](url))`; they never replace the repo link.
 - Descriptions: one sentence, factual, no superlatives.

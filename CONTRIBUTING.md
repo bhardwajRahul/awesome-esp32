@@ -12,6 +12,8 @@ Counts: a photo of the thing built and powered, a video of it running, a live de
 
 Does not count: a 3D render, a PCB viewer, a generated snapshot, a simulator screenshot, a render of an enclosure. A thing that only exists as an image has not run.
 
+If the project runs on several devices, say which one the proof was captured on. Supporting three devices and having run on one of them are different claims, and the reader who buys the wrong one finds out the hard way.
+
 **2. A new category needs at least two projects.**
 
 Add your project to a category that already exists in the README. If nothing fits, say so in the pull request and propose the category, then expect it to wait until a second project of its kind shows up. A category with one entry says nothing.
@@ -23,7 +25,7 @@ The rest of this document is the detail.
 Three gates. A project needs all three, and one missing gate is a no whatever the other two look like.
 
 1. **Public source you can build.** A repository, not a video-only showcase. If the code is not there, it is not an entry.
-2. **Evidence it ran on real hardware.** Rule 1 above: a photo, a video, or a live demo, linked in the pull request.
+2. **Evidence it ran on real hardware.** Rule 1 above: a photo, a video, or a live demo, linked in the pull request, naming the device it was captured on when the project supports more than one.
 3. **Someone else could reproduce it.** The README names the board and says how to flash it.
 
 Then:
@@ -38,7 +40,8 @@ Then:
 - One project per pull request, with a short PR title like `Add project-name`.
 - Add it to the bottom of the category that fits best, per rule 2 above.
 - Format: `- [name](link-to-repo) - What it is, one sentence ending with a period.`
-- **Name the device you built it on**, spelled exactly as [devices.md](devices.md) spells it. That spelling is what makes a search of the README find every project for one piece of hardware, so `Waveshare ESP32-S3-Touch-AMOLED-1.8` and `the AMOLED board` are not interchangeable. If your device has no section yet, add one in the same pull request: name, one line of what it is, and the manufacturer's page.
+- **Name the device you built it on**, spelled exactly as [devices.md](devices.md) spells it. That spelling is what makes a search of the README find every project for one piece of hardware, so `Waveshare ESP32-S3-Touch-AMOLED-1.8` and `the AMOLED board` are not interchangeable.
+- **If your device is not in [devices.md](devices.md) yet, add it in the same pull request.** A section is three lines: the exact name as its maker spells it, one line of what it is (chip, screen, what it has built in), and a link to the maker's product page. There is no bar to clear, the first project to use a device is the one that adds it.
 - If several devices are involved, say which: all of them required, one of them at your choice, or one plus optional extras. A reader is deciding what to buy.
 - Some projects honestly have no device. Firmware that runs on dozens of boards points at its own compatibility list, and a build from a bare ESP32 plus parts says so. Do not invent a device to satisfy the rule.
 - The link must point to a **source repository** (or the closest thing to one). Product pages, videos, and blog posts can complement it as a trailing `([demo](url))`, never replace it.
