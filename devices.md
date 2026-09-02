@@ -40,6 +40,11 @@ ESP32-P4 dev kit driving a 7-inch DSI touch panel.
 ESP32-S3 stick with a small display, IMU, microphone and battery.
 [Product page](https://shop.m5stack.com/products/m5sticks3-esp32s3-mini-iot-dev-kit)
 
+## M5Stack StopWatch
+
+ESP32-S3R8 round 1.75" 466x466 AMOLED touch, two buttons, vibration motor, ES8311 audio, BMI270 IMU, 450mAh battery.
+[Product page](https://shop.m5stack.com/products/m5stack-stopwatch-dev-kit-esp32-s3)
+
 ## M5Stack CoreS3
 
 ESP32-S3 in the stackable Core case: 320x240 touch screen, IMU, camera, microphone,
