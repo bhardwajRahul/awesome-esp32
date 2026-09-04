@@ -13,6 +13,11 @@ the bus is write-only, so the board cannot report which one it has.
 [Product page](https://www.waveshare.com/product/esp32-related/boards-kits/esp32-s3/esp32-s3-touch-amoled-1.8.htm) ·
 [field guide](guides/waveshare-amoled-18.md)
 
+## Waveshare ESP32-S3-Touch-AMOLED-1.75
+
+ESP32-S3, 466x466 round touch AMOLED, QMI8658 6-axis IMU, battery support.
+[Product page](https://www.waveshare.com/esp32-s3-touch-amoled-1.75.htm)
+
 ## Waveshare ESP32-S3-Touch-AMOLED-2.06
 
 ESP32-S3R8, 410x502 touch AMOLED, QMI8658 6-axis IMU, battery support. Larger sibling of
