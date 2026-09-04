@@ -81,6 +81,7 @@ Elsewhere, write-ups by @ardchain posted as threads on X (third-party, not repo 
 
 - [ESP-KVM](https://github.com/espkvm/espkvm) - IP-KVM on a Waveshare ESP32-P4-ETH and a TC358743 HDMI bridge: captures the target machine's screen, presents itself to that machine as a USB keyboard and mouse, and puts both in a browser, down to the BIOS of a box with no working OS. ([demo](https://espkvm.io/demo/)) `Waveshare ESP32-P4-ETH`
 - [Midbar](https://github.com/Northstrix/Midbar) - Hardware data vault for credentials and notes, built across a dozen MCUs including the ESP32: keys derive from the boot-time master password, joined by RFID cards on some versions.
+- [HomeworkTimer](https://github.com/doublemarkpro/HomeworkTimer-ESP32-S3-Touch-LCD-3.49) - Homework timer for children with per-subject tracking, weekly reports, schedules, alarms, weather, Wi-Fi time sync and a low-power lock screen. ([demo](https://github.com/doublemarkpro/HomeworkTimer-ESP32-S3-Touch-LCD-3.49/blob/main/docs/hardware/home-screen.jpg)) `Waveshare ESP32-S3-Touch-LCD-3.49B`
 
 ## Tools, utilities & libraries
 
