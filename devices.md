@@ -15,7 +15,8 @@ the bus is write-only, so the board cannot report which one it has.
 
 ## Waveshare ESP32-S3-Touch-AMOLED-1.75
 
-ESP32-S3, 466x466 round touch AMOLED, QMI8658 6-axis IMU, battery support.
+ESP32-S3R8, 466x466 round touch AMOLED, QMI8658 6-axis IMU, PCF85063 RTC, AXP2101 PMIC,
+dual microphones, battery support.
 [Product page](https://www.waveshare.com/esp32-s3-touch-amoled-1.75.htm)
 
 ## Waveshare ESP32-S3-Touch-AMOLED-2.06
