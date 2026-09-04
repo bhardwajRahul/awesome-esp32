@@ -19,6 +19,12 @@ ESP32-S3R8, 410x502 touch AMOLED, QMI8658 6-axis IMU, battery support. Larger si
 the 1.8 and a different device: pin map, panel and drivers do not carry over.
 [Product page](https://www.waveshare.com/esp32-s3-touch-amoled-2.06.htm)
 
+## Waveshare ESP32-S3-Touch-LCD-3.49B
+
+ESP32-S3R8, 172x640 capacitive touch LCD, audio codecs, microphones, speaker output,
+QMI8658 6-axis IMU, PCF85063 RTC and lithium polymer battery support.
+[Product page](https://www.waveshare.com/esp32-s3-touch-lcd-3.49.htm)
+
 ## Waveshare RP2350-Touch-AMOLED-1.8
 
 The same 368x448 touch AMOLED shell as the ESP32-S3 board, on an RP2350 instead. Present
