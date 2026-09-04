@@ -45,6 +45,7 @@ Elsewhere, write-ups by @ardchain posted as threads on X (third-party, not repo 
 - [OpenEPaperLink](https://github.com/OpenEPaperLink/OpenEPaperLink) - Repurposes electronic shelf labels into a wireless e-paper display network with an ESP32 access point.
 - [trmnl firmware](https://github.com/usetrmnl/firmware) - Firmware behind the TRMNL e-ink dashboard, an ESP32-C3 driving a battery-friendly plugin ecosystem. `TRMNL`
 - [esp32-vertical-card-compass](https://github.com/austinbirch/esp32-vertical-card-compass) - Simulates an aviation vertical-card magnetic compass on an M5Stack CoreS3: the card swings, overshoots, and reproduces the real instrument's errors. ([demo](https://x.com/austinbirch/status/2086535581773828169)) `M5Stack CoreS3`
+- [stripe-business-metrics-monitor](https://github.com/cosjef/stripe-business-metrics-monitor) - Desk display for a Stripe subscription business, rotating eight screens of MRR and its 30-day trend, signup pace, ARPU compared across joining and leaving cohorts, and failed payments with the revenue at risk. `Waveshare ESP32-C6-Touch-AMOLED-2.16`
 
 ### Play
 

@@ -19,6 +19,14 @@ ESP32-S3R8, 410x502 touch AMOLED, QMI8658 6-axis IMU, battery support. Larger si
 the 1.8 and a different device: pin map, panel and drivers do not carry over.
 [Product page](https://www.waveshare.com/esp32-s3-touch-amoled-2.06.htm)
 
+## Waveshare ESP32-C6-Touch-AMOLED-2.16
+
+ESP32-C6, 480x480 CO5300 touch AMOLED on QSPI, CST9217 touch, QMI8658 6-axis
+IMU, AXP2101 PMIC, battery support. The PMIC gates the panel rails and its
+ALDO3 doubles as the panel reset, so power-up ordering matters; Waveshare's
+own ESP-IDF example gives LCD_CS as GPIO5, which is wrong for this board.
+[Product page](https://www.waveshare.com/esp32-c6-touch-amoled-2.16.htm)
+
 ## Waveshare RP2350-Touch-AMOLED-1.8
 
 The same 368x448 touch AMOLED shell as the ESP32-S3 board, on an RP2350 instead. Present
