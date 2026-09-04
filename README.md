@@ -76,6 +76,7 @@ Elsewhere, write-ups by @ardchain posted as threads on X (third-party, not repo 
 
 - [squeezelite-esp32](https://github.com/sle118/squeezelite-esp32) - Multi-room audio player and AirPlay/Spotify/Bluetooth endpoint on a bare ESP32.
 - [esp32_basic_synth](https://github.com/marcel-licence/esp32_basic_synth) - A polyphonic MIDI synthesizer from one chip and a DAC.
+- [esp32-spotify-remote](https://github.com/seichris/esp32-spotify-remote) - A touchscreen Spotify playback controller with previous, play/pause, and next controls, now-playing metadata, album artwork, and PKCE authorization. `Waveshare ESP32-S3-Touch-AMOLED-2.06`
 
 ### Utilities & appliances
 
