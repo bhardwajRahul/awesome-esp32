@@ -93,6 +93,13 @@ Discontinued by M5Stack, and the CoreS3 above is its successor in the same case,
 what you can still get before buying a project that names it.
 [Product page](https://shop.m5stack.com/products/m5stack-core2-esp32-iot-development-kit-v1-1)
 
+## M5Stack Tab5
+
+ESP32-P4 with an ESP32-C6 radio co-processor for Wi-Fi 6, a 5-inch 1280x720 MIPI-DSI
+touch screen, a 2MP MIPI-CSI camera, ES8388 audio codec with dual microphones and a
+speaker, and a removable NP-F550 battery.
+[Product page](https://shop.m5stack.com/products/m5stack-tab5-iot-development-kit-esp32-p4)
+
 ## Ulanzi Smart Pixel Clock TC001
 
 A shipped consumer clock built on an ESP32 driving a 32x8 addressable LED matrix, with
@@ -103,6 +110,15 @@ light and temperature sensors, buttons and a battery.
 
 A shipped ESP32-C3 e-ink dashboard, sold assembled, with a plugin ecosystem behind it.
 [Product page](https://trmnl.com)
+
+## Narya board
+
+Open hardware built for Family mruby Retro: an ESP32-S3 paired with an ESP32-WROVER that
+drives NTSC composite video and I2S audio, so the board plugs into a TV, with a USB host
+port for a keyboard and mouse, an SD card slot and an RTC. Sold assembled in small
+batches, and the KiCAD sources are published.
+[Product page](https://booth.pm/ja/items/8128031) ·
+[design files](https://github.com/family-mruby/narya-board)
 
 ## No single device
 
