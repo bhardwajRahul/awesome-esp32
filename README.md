@@ -93,6 +93,7 @@ Elsewhere, write-ups by @ardchain posted as threads on X (third-party, not repo 
 - [esp-hal](https://github.com/esp-rs/esp-hal) - Bare-metal Rust for ESP32 chips.
 - [MicroPython](https://github.com/micropython/micropython) - Python on the chip, with first-class ESP32 support.
 - [ESPHome](https://github.com/esphome/esphome) - Describe a device in YAML, get firmware; the default way ESP32s enter Home Assistant.
+- [Family mruby](https://github.com/family-mruby/family-mruby) - Multitasking OS running mruby, MicroPython, Lua and BASIC on the chip, with a windowed desktop and an on-device editor. ([demo](https://www.youtube.com/watch?v=9vkRaOoxJJI)) `M5Stack Tab5` or `Narya board`
 
 ### Utilities & SDKs
 
