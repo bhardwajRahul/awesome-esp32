@@ -103,6 +103,7 @@ Elsewhere, write-ups by @ardchain posted as threads on X (third-party, not repo 
 - [openHASP](https://github.com/HASwitchPlate/openHASP) - Build custom touchscreen control panels for home automation, driven over MQTT.
 - [psiop](https://github.com/aap/psiop) - A compact software 3D rendering library for the ESP32. ([demo](https://x.com/Alacritic_Super/status/2089987821352403387))
 - [openai-realtime-embedded](https://github.com/openai/openai-realtime-embedded) - OpenAI's official SDK for talking to the Realtime API over WebRTC from an ESP32-S3.
+- [ESP32Drop](https://github.com/s-iwaki-d/ESP32Drop) - Arduino library that speaks Apple Wireless Direct Link so an ESP32-S3 shows up in the AirDrop share sheet and receives a photo from an iPhone or Mac, or sends one back, with no pairing and no Wi-Fi network. ([demo](https://youtu.be/D7EdZe_lp2o)) `M5Stack StopWatch`
 
 ### Emulators & simulators
 
