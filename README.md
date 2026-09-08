@@ -38,6 +38,7 @@ Elsewhere, write-ups by @ardchain posted as threads on X (third-party, not repo 
 - [Vibe Watch](https://github.com/GOROman/vibewatch) - Wrist-worn M5Stack StopWatch controller for parallel AI coding agents, with physical approve/reject, haptics, and BLE HID. ([demo](https://x.com/GOROman/status/2094369107781283991)) `M5Stack StopWatch`
 - [esp32-ai TinyPoems](https://github.com/jeonghopark/esp32-ai) - Runs a tiny poem language model locally on an M5Stack StickS3 and displays generated poems on its LCD. `M5StickS3`
 - [Codex Microphone](https://github.com/seichris/codex-microphone) - Physical Codex Desktop attention inbox and privacy-gated USB or paired Wi-Fi microphone companion for a Waveshare ESP32-S3-Touch-AMOLED-2.06. ([demo](https://github.com/seichris/codex-microphone/blob/main/docs/codex-mic-github.jpg)) `Waveshare ESP32-S3-Touch-AMOLED-2.06`
+- [Code Familiar](https://github.com/rcostache230/code-familiar) - Round-screen desk companion for Codex and Claude Code that shows task activity, permission requests, usage windows, and recent events through a local macOS bridge. ([demo](https://github.com/rcostache230/code-familiar/blob/main/design/audit/01-physical-portal-v1.png)) `Waveshare ESP32-S3-Touch-AMOLED-1.75`
 
 ### Displays & ambient
 
