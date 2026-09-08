@@ -87,6 +87,7 @@ Elsewhere, write-ups by @ardchain posted as threads on X (third-party, not repo 
 - [Midbar](https://github.com/Northstrix/Midbar) - Hardware data vault for credentials and notes, built across a dozen MCUs including the ESP32: keys derive from the boot-time master password, joined by RFID cards on some versions.
 - [HomeworkTimer](https://github.com/doublemarkpro/HomeworkTimer-ESP32-S3-Touch-LCD-3.49) - Homework timer for children with per-subject tracking, weekly reports, schedules, alarms, weather, Wi-Fi time sync and a low-power lock screen. ([demo](https://github.com/doublemarkpro/HomeworkTimer-ESP32-S3-Touch-LCD-3.49/blob/main/docs/hardware/home-screen.jpg)) `Waveshare ESP32-S3-Touch-LCD-3.49B`
 - [open-bike-computer](https://github.com/seichris/open-bike-computer) - Garmin-mounted bike computer paired with its iPhone and Apple Watch app: Apple Maps navigation, live workout stats, Apple Health and Strava sync, power-meter and cadence sensors. `Waveshare ESP32-S3-Touch-AMOLED-1.75` or `Waveshare ESP32-S3-Touch-AMOLED-2.06`
+- [tempmeter](https://github.com/AideaHandesen-dvs/tempmeter) - Room thermometer built from an ESP32-C3 and a BME280 for about ¥1,500: temperature and humidity alternate on a TM1637 7-segment display, pressure and a JSON endpoint arrive over Wi-Fi, and the network is set from a phone through a captive portal. ([demo](https://youtu.be/Tk6F4vo_uOE))
 
 ## Tools, utilities & libraries
 

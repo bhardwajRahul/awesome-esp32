@@ -138,6 +138,9 @@ instead:
 - **esp32-lvgl-watchface**: any board with a 240x240 display that LVGL can drive.
 - **Midbar**: versions exist for a dozen microcontrollers including the ESP32, each with
   its own parts list and its own build.
+- **tempmeter**: an ESP32-C3 SuperMini, a BME280 breakout and a TM1637 4-digit
+  display, wired by you, in a 3D-printed case. The README gives the pin map and the
+  transmit-power setting the SuperMini needs to keep its access point up.
 - **Tasmota, WLED, Meshtastic, ESPHome, xiaozhi-esp32**: firmware ecosystems running on
   hundreds to thousands of boards. Each publishes the compatibility list; no short answer
   here would be true.
